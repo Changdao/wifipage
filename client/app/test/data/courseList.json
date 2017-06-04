@@ -1,0 +1,532 @@
+[
+    {
+         "id"            : 1
+        ,"name"          : "新投产监控调试与试验1"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-4.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX1"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 2
+        ,"name"          : "新投产监控调试与试验2"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-3.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX2"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 3
+        ,"name"          : "新投产监控调试与试验3"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-2.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 4
+        ,"name"          : "新投产监控调试与试验4"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-1.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 5
+        ,"name"          : "新投产监控调试与试验5"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-3.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 6
+        ,"name"          : "新投产监控调试与试验6"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-1.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 7
+        ,"name"          : "新投产监控调试与试验7"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-4.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 8
+        ,"name"          : "新投产监控调试与试验8"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-2.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 9
+        ,"name"          : "新投产监控调试与试验9"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-3.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+    ,{
+         "id"            : 10
+        ,"name"          : "新投产监控调试与试验10"
+        ,"chapter"       : {
+             "id"        : 13
+            ,"name"      : "第13章抽水蓄能电站监控系统"
+            ,"remark"    : "第13章抽水蓄能电站监控系统"
+            ,"sortNumber": 99999
+        }
+        ,"section"       : {
+             "id"        : 4
+            ,"name"      : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"remark"    : "第4节抽水蓄能电站监控系统的维护与检修"
+            ,"sortNumber": 99999
+        }
+        ,"equipment"     : {
+             "id"    : 1
+            ,"name"  : "通用"
+            ,"remark": "通用"
+        }
+        ,"post"          : {
+             "id"    : 1
+            ,"name"  : "初级"
+            ,"remark": "初级"
+        }
+        ,"representation": {
+             "id"        : 1
+            ,"name"      : "视频"
+            ,"remark"    : "视频"
+            ,"sortNumber": 99999
+        }
+        ,"businesses"    : [
+            {
+                 "id"        : 1
+                ,"name"      : "值守"
+                ,"remark"    : "值守"
+                ,"sortNumber": 99999
+            }
+            ,{
+                 "id"        : 2
+                ,"name"      : "操作"
+                ,"remark"    : "操作"
+                ,"sortNumber": 99999
+            }
+        ]
+        ,"reviewImage"   : "/assets/images/courses/course-thumb-4.jpg"
+        ,"courseware"    : "/assets/video/testvideo.mp4"
+        ,"lecturer"      : "李XXX"
+        ,"hour"          : 15
+        ,"gist"          : "培训要训要点培训要点培训要点培训要点"
+        ,"description"   : "详细描述详细描述详细描述详细描述详细描述详细描述"
+        ,"remark"        : "备注备注备注备注备注备注"
+    }
+]

@@ -1,0 +1,8011 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "465E9BA0-9949-4555-B4B9-4D96B2CF37D5"
+		}
+	],
+"creatorBuild": "25813",
+"files": {
+	"\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.htaccess",
+		"oF": 0
+		},
+	"\/assets\/college-green-logo.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/college-green-logo.psd",
+		"oF": 0
+		},
+	"\/assets\/css\/styles-origin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/styles-origin-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/styles-purple.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/styles-purple-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/styles-red.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/styles-red-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/images\/750x300-about.jpg": {
+		"ft": 16384,
+		"iS": 98164,
+		"oA": 0,
+		"oAP": "\/assets\/images\/750x300-about.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award1.jpg": {
+		"ft": 16384,
+		"iS": 3301,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award2.jpg": {
+		"ft": 16384,
+		"iS": 3049,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award3.jpg": {
+		"ft": 16384,
+		"iS": 4306,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award4.jpg": {
+		"ft": 16384,
+		"iS": 4041,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award5.jpg": {
+		"ft": 16384,
+		"iS": 3937,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award6.jpg": {
+		"ft": 16384,
+		"iS": 4973,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/awards\/award7.jpg": {
+		"ft": 16384,
+		"iS": 4373,
+		"oA": 0,
+		"oAP": "\/assets\/images\/awards\/award7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/courses\/course-1.jpg": {
+		"ft": 16384,
+		"iS": 73324,
+		"oA": 0,
+		"oAP": "\/assets\/images\/courses\/course-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/courses\/course-thumb-1.jpg": {
+		"ft": 16384,
+		"iS": 9868,
+		"oA": 0,
+		"oAP": "\/assets\/images\/courses\/course-thumb-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/courses\/course-thumb-2.jpg": {
+		"ft": 16384,
+		"iS": 9232,
+		"oA": 0,
+		"oAP": "\/assets\/images\/courses\/course-thumb-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/courses\/course-thumb-3.jpg": {
+		"ft": 16384,
+		"iS": 10261,
+		"oA": 0,
+		"oAP": "\/assets\/images\/courses\/course-thumb-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/courses\/course-thumb-4.jpg": {
+		"ft": 16384,
+		"iS": 11647,
+		"oA": 0,
+		"oAP": "\/assets\/images\/courses\/course-thumb-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-1.jpg": {
+		"ft": 16384,
+		"iS": 628996,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-10.jpg": {
+		"ft": 16384,
+		"iS": 640664,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-11.jpg": {
+		"ft": 16384,
+		"iS": 785896,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-12.jpg": {
+		"ft": 16384,
+		"iS": 624027,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-13.jpg": {
+		"ft": 16384,
+		"iS": 602258,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-13.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-14.jpg": {
+		"ft": 16384,
+		"iS": 633094,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-14.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-15.jpg": {
+		"ft": 16384,
+		"iS": 443450,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-16.jpg": {
+		"ft": 16384,
+		"iS": 701550,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-16.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-17.jpg": {
+		"ft": 16384,
+		"iS": 614886,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-17.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-18.jpg": {
+		"ft": 16384,
+		"iS": 576391,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-18.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-19.jpg": {
+		"ft": 16384,
+		"iS": 447538,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-19.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-2.jpg": {
+		"ft": 16384,
+		"iS": 763260,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-20.jpg": {
+		"ft": 16384,
+		"iS": 447335,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-20.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-21.jpg": {
+		"ft": 16384,
+		"iS": 629515,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-21.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-22.jpg": {
+		"ft": 16384,
+		"iS": 594446,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-22.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-23.jpg": {
+		"ft": 16384,
+		"iS": 499768,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-23.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-24.jpg": {
+		"ft": 16384,
+		"iS": 629189,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-24.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 605881,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-4.jpg": {
+		"ft": 16384,
+		"iS": 523930,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-5.jpg": {
+		"ft": 16384,
+		"iS": 366773,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-6.jpg": {
+		"ft": 16384,
+		"iS": 410328,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-7.jpg": {
+		"ft": 16384,
+		"iS": 358098,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-8.jpg": {
+		"ft": 16384,
+		"iS": 543511,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-9.jpg": {
+		"ft": 16384,
+		"iS": 452524,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-1.jpg": {
+		"ft": 16384,
+		"iS": 85367,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-10.jpg": {
+		"ft": 16384,
+		"iS": 149122,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-11.jpg": {
+		"ft": 16384,
+		"iS": 98098,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-12.jpg": {
+		"ft": 16384,
+		"iS": 277345,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-13.jpg": {
+		"ft": 16384,
+		"iS": 116435,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-13.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-14.jpg": {
+		"ft": 16384,
+		"iS": 106771,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-14.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-15.jpg": {
+		"ft": 16384,
+		"iS": 80535,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-16.jpg": {
+		"ft": 16384,
+		"iS": 98334,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-16.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-17.jpg": {
+		"ft": 16384,
+		"iS": 116732,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-17.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-18.jpg": {
+		"ft": 16384,
+		"iS": 80535,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-18.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-19.jpg": {
+		"ft": 16384,
+		"iS": 89710,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-19.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-2.jpg": {
+		"ft": 16384,
+		"iS": 81881,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-20.jpg": {
+		"ft": 16384,
+		"iS": 86203,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-20.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-21.jpg": {
+		"ft": 16384,
+		"iS": 81587,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-21.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-22.jpg": {
+		"ft": 16384,
+		"iS": 126900,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-22.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-23.jpg": {
+		"ft": 16384,
+		"iS": 86620,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-23.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-24.jpg": {
+		"ft": 16384,
+		"iS": 90677,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-24.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-3.jpg": {
+		"ft": 16384,
+		"iS": 98746,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-4.jpg": {
+		"ft": 16384,
+		"iS": 86706,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-5.jpg": {
+		"ft": 16384,
+		"iS": 62577,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-6.jpg": {
+		"ft": 16384,
+		"iS": 86775,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-7.jpg": {
+		"ft": 16384,
+		"iS": 73507,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-8.jpg": {
+		"ft": 16384,
+		"iS": 107812,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/gallery\/gallery-thumb-9.jpg": {
+		"ft": 16384,
+		"iS": 94037,
+		"oA": 0,
+		"oAP": "\/assets\/images\/gallery\/gallery-thumb-9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/logo-green.png": {
+		"ft": 32768,
+		"iS": 4483,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo-green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/logo-old.png": {
+		"ft": 32768,
+		"iS": 4463,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo-old.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/logo-purple.png": {
+		"ft": 32768,
+		"iS": 4480,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo-purple.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/logo-red.png": {
+		"ft": 32768,
+		"iS": 4492,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo-red.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 20743,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/logo2.png": {
+		"ft": 32768,
+		"iS": 9092,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/misc\/bootstrap-glyphicons-screenshot.png": {
+		"ft": 32768,
+		"iS": 154719,
+		"oA": 0,
+		"oAP": "\/assets\/images\/misc\/bootstrap-glyphicons-screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/misc\/fontawsome-screenshot.png": {
+		"ft": 32768,
+		"iS": 263493,
+		"oA": 0,
+		"oAP": "\/assets\/images\/misc\/fontawsome-screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-1.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-thumb-1.jpg": {
+		"ft": 16384,
+		"iS": 11090,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-thumb-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-thumb-2.jpg": {
+		"ft": 16384,
+		"iS": 7645,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-thumb-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-thumb-3.jpg": {
+		"ft": 16384,
+		"iS": 8527,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-thumb-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-thumb-4.jpg": {
+		"ft": 16384,
+		"iS": 8439,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-thumb-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-thumb-5.jpg": {
+		"ft": 16384,
+		"iS": 8571,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-thumb-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/news\/news-thumb-6.jpg": {
+		"ft": 16384,
+		"iS": 7947,
+		"oA": 0,
+		"oAP": "\/assets\/images\/news\/news-thumb-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/nophoto.jpg": {
+		"ft": 16384,
+		"iS": 29844,
+		"oA": 0,
+		"oAP": "\/assets\/images\/nophoto.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slides\/slide-1.jpg": {
+		"ft": 16384,
+		"iS": 169650,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slides\/slide-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slides\/slide-2.jpg": {
+		"ft": 16384,
+		"iS": 115716,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slides\/slide-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slides\/slide-3.jpg": {
+		"ft": 16384,
+		"iS": 103056,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slides\/slide-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slides\/slide-4.jpg": {
+		"ft": 16384,
+		"iS": 134662,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slides\/slide-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/slides\/slide-6.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/assets\/images\/slides\/slide-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/team\/team-1.jpg": {
+		"ft": 16384,
+		"iS": 13483,
+		"oA": 0,
+		"oAP": "\/assets\/images\/team\/team-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/team\/team-2.jpg": {
+		"ft": 16384,
+		"iS": 17485,
+		"oA": 0,
+		"oAP": "\/assets\/images\/team\/team-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/team\/team-3.jpg": {
+		"ft": 16384,
+		"iS": 13216,
+		"oA": 0,
+		"oAP": "\/assets\/images\/team\/team-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/team\/team-4.jpg": {
+		"ft": 16384,
+		"iS": 13717,
+		"oA": 0,
+		"oAP": "\/assets\/images\/team\/team-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/testimonials\/profile-1.png": {
+		"ft": 32768,
+		"iS": 25478,
+		"oA": 0,
+		"oAP": "\/assets\/images\/testimonials\/profile-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/testimonials\/profile-2.png": {
+		"ft": 32768,
+		"iS": 25117,
+		"oA": 0,
+		"oAP": "\/assets\/images\/testimonials\/profile-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/testimonials\/profile-3.png": {
+		"ft": 32768,
+		"iS": 25056,
+		"oA": 0,
+		"oAP": "\/assets\/images\/testimonials\/profile-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/testimonials\/profile-4.png": {
+		"ft": 32768,
+		"iS": 28800,
+		"oA": 0,
+		"oAP": "\/assets\/images\/testimonials\/profile-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/upload_image.png": {
+		"ft": 32768,
+		"iS": 5155,
+		"oA": 0,
+		"oAP": "\/assets\/images\/upload_image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/upload_image2.png": {
+		"ft": 32768,
+		"iS": 1733,
+		"oA": 0,
+		"oAP": "\/assets\/images\/upload_image2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/map.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/map-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/back-to-top.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/back-to-top-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/bootstrap-hover-dropdown.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap-hover-dropdown.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/.editorconfig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/.editorconfig",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/.gitattributes": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/.gitattributes",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/.hound.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/.hound.yml",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/.travis.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/.travis.yml",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap-theme-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.css.map",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap-theme.min.css.map",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap.css.map",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/css\/bootstrap.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/css\/bootstrap.min.css.map",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.eot",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.ttf",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.woff",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/bootstrap\/fonts\/glyphicons-halflings-regular.woff2",
+		"oF": 0
+		},
+	"\/assets\/plugins\/bootstrap\/js\/bootstrap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/js\/bootstrap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/js\/bootstrap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/js\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/bootstrap\/js\/npm.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/bootstrap\/js\/npm-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/flexslider\/flexslider.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/flexslider\/flexslider-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/flexslider\/images\/bg_direction_nav.png": {
+		"ft": 32768,
+		"iS": 1995,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/flexslider\/images\/bg_direction_nav.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/flexslider\/images\/bg_direction_nav1.png": {
+		"ft": 32768,
+		"iS": 1866,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/flexslider\/images\/bg_direction_nav1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/flexslider\/jquery.flexslider-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/flexslider\/jquery.flexslider-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/flexslider\/jquery.flexslider.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/flexslider\/jquery.flexslider-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/flexslider\/README.mdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/flexslider\/README.mdown",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/css\/font-awesome.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/font-awesome\/css\/font-awesome-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/font-awesome\/css\/font-awesome.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/font-awesome\/css\/font-awesome.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/HELP-US-OUT.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/font-awesome\/HELP-US-OUT.txt",
+		"oF": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/animated.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/animated.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/bordered-pulled.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/bordered-pulled.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/core.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/core.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/fixed-width.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/fixed-width.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/font-awesome.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/font-awesome.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/icons.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/icons.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/larger.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/larger.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/list.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/list.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/mixins.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/path.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/path.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/rotated-flipped.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/rotated-flipped.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/stacked.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/stacked.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/less\/variables.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/less\/variables.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_animated.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_animated.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_bordered-pulled.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_bordered-pulled.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_core.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_core.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_fixed-width.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_fixed-width.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_larger.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_larger.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_path.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_path.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_rotated-flipped.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_rotated-flipped.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_stacked.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_stacked.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/font-awesome\/scss\/font-awesome.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/font-awesome\/scss\/font-awesome.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/plugins\/gmaps\/gmaps.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/gmaps\/gmaps-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/colorbox\/colorbox.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/colorbox\/colorbox-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/colorbox\/images\/controls.png": {
+		"ft": 32768,
+		"iS": 1633,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/colorbox\/images\/controls.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/jflickrfeed\/colorbox\/images\/loading.gif": {
+		"ft": 4194304,
+		"iS": 9427,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/colorbox\/images\/loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/colorbox\/jquery.colorbox-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/colorbox\/jquery.colorbox-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/cycle\/jquery.cycle.all.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/cycle\/jquery.cycle.all.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/example.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/example.html",
+		"oF": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/jflickrfeed.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/jflickrfeed-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/jflickrfeed.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/jflickrfeed.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/setup.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/setup-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jflickrfeed\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jflickrfeed\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/jquery-1.11.2.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jquery-1.11.2.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jquery-migrate-1.2.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jquery-migrate-1.2.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/.gitattributes": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/.gitattributes",
+		"oF": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/assets\/plugins\/jquery-placeholder\/demo.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/demo.html",
+		"oF": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/jquery.placeholder.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/jquery.placeholder-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/LICENSE-MIT.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/LICENSE-MIT.txt",
+		"oF": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/tests\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/tests\/index.html",
+		"oF": 0
+		},
+	"\/assets\/plugins\/jquery-placeholder\/tests\/tests.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/jquery-placeholder\/tests\/tests-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/css\/prettyPhoto.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/css\/prettyPhoto-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/1.jpg": {
+		"ft": 16384,
+		"iS": 61924,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/2.jpg": {
+		"ft": 16384,
+		"iS": 84412,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/3.jpg": {
+		"ft": 16384,
+		"iS": 35532,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/4.jpg": {
+		"ft": 16384,
+		"iS": 98304,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/5.jpg": {
+		"ft": 16384,
+		"iS": 44257,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/6.jpg": {
+		"ft": 16384,
+		"iS": 962237,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/high.gif": {
+		"ft": 4194304,
+		"iS": 4053,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/high.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/huge.gif": {
+		"ft": 4194304,
+		"iS": 7006,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/huge.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/fullscreen\/wide.gif": {
+		"ft": 4194304,
+		"iS": 4053,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/fullscreen\/wide.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/btnNext.png": {
+		"ft": 32768,
+		"iS": 1411,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/btnNext.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/btnPrevious.png": {
+		"ft": 32768,
+		"iS": 1442,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/btnPrevious.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/contentPattern.png": {
+		"ft": 32768,
+		"iS": 130,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/contentPattern.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/default_thumbnail.gif": {
+		"ft": 4194304,
+		"iS": 227,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/default_thumbnail.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/loader.gif": {
+		"ft": 4194304,
+		"iS": 2545,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/sprite.png": {
+		"ft": 32768,
+		"iS": 4076,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_rounded\/sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/btnNext.png": {
+		"ft": 32768,
+		"iS": 1411,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/btnNext.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/btnPrevious.png": {
+		"ft": 32768,
+		"iS": 1442,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/btnPrevious.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/contentPattern.png": {
+		"ft": 32768,
+		"iS": 121,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/contentPattern.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/default_thumbnail.gif": {
+		"ft": 4194304,
+		"iS": 227,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/default_thumbnail.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/loader.gif": {
+		"ft": 4194304,
+		"iS": 2545,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/sprite.png": {
+		"ft": 32768,
+		"iS": 3507,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/dark_square\/sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/default_thumb.png": {
+		"ft": 32768,
+		"iS": 1537,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/default_thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/loader.gif": {
+		"ft": 4194304,
+		"iS": 6331,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite.png": {
+		"ft": 32768,
+		"iS": 6682,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_next.png": {
+		"ft": 32768,
+		"iS": 1358,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_next.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_prev.png": {
+		"ft": 32768,
+		"iS": 1376,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_prev.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_x.png": {
+		"ft": 32768,
+		"iS": 1097,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_y.png": {
+		"ft": 32768,
+		"iS": 1162,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/default\/sprite_y.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/btnNext.png": {
+		"ft": 32768,
+		"iS": 845,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/btnNext.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/btnPrevious.png": {
+		"ft": 32768,
+		"iS": 828,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/btnPrevious.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternBottom.png": {
+		"ft": 32768,
+		"iS": 142,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternBottom.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternLeft.png": {
+		"ft": 32768,
+		"iS": 137,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternLeft.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternRight.png": {
+		"ft": 32768,
+		"iS": 136,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternRight.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternTop.png": {
+		"ft": 32768,
+		"iS": 142,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/contentPatternTop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/default_thumbnail.gif": {
+		"ft": 4194304,
+		"iS": 227,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/default_thumbnail.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/loader.gif": {
+		"ft": 4194304,
+		"iS": 2545,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/sprite.png": {
+		"ft": 32768,
+		"iS": 4227,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/facebook\/sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/btnNext.png": {
+		"ft": 32768,
+		"iS": 1411,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/btnNext.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/btnPrevious.png": {
+		"ft": 32768,
+		"iS": 1442,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/btnPrevious.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/default_thumbnail.gif": {
+		"ft": 4194304,
+		"iS": 227,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/default_thumbnail.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/loader.gif": {
+		"ft": 4194304,
+		"iS": 2545,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/sprite.png": {
+		"ft": 32768,
+		"iS": 4099,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_rounded\/sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/btnNext.png": {
+		"ft": 32768,
+		"iS": 1411,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/btnNext.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/btnPrevious.png": {
+		"ft": 32768,
+		"iS": 1442,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/btnPrevious.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/default_thumbnail.gif": {
+		"ft": 4194304,
+		"iS": 227,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/default_thumbnail.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/loader.gif": {
+		"ft": 4194304,
+		"iS": 2545,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/sprite.png": {
+		"ft": 32768,
+		"iS": 3507,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/prettyPhoto\/light_square\/sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/flash-logo.png": {
+		"ft": 32768,
+		"iS": 6410,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/flash-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/quicktime-logo.gif": {
+		"ft": 4194304,
+		"iS": 8769,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/quicktime-logo.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_1.jpg": {
+		"ft": 16384,
+		"iS": 3002,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_2.jpg": {
+		"ft": 16384,
+		"iS": 2379,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_3.jpg": {
+		"ft": 16384,
+		"iS": 1937,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_4.jpg": {
+		"ft": 16384,
+		"iS": 3341,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_5.jpg": {
+		"ft": 16384,
+		"iS": 2534,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/images\/thumbnails\/t_5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/plugins\/pretty-photo\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/pretty-photo\/index.html",
+		"oF": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/js\/jquery-1.3.2.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/js\/jquery-1.3.2.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/js\/jquery-1.4.4.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/js\/jquery-1.4.4.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/js\/jquery-1.6.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/js\/jquery-1.6.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/js\/jquery.prettyPhoto.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/plugins\/pretty-photo\/js\/jquery.prettyPhoto-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/README": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/pretty-photo\/README",
+		"oF": 0
+		},
+	"\/assets\/plugins\/pretty-photo\/xhr_response.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/plugins\/pretty-photo\/xhr_response.html",
+		"oF": 0
+		},
+	"\/assets\/video\/testvideo.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/video\/testvideo.mp4",
+		"oF": 0
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/less\/custom.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/less\/custom.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/base.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/base.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/contact.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/courses.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/courses.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/events.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/events.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/home.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/home.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/mixins.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/responsive.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/styles.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/less\/default\/styles.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/default\/theme-default.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/default\/theme-default.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/base.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/base.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/contact.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/courses.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/courses.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/events.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/events.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/home.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/home.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/mixins.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/responsive.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/styles-green.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/less\/green\/styles-green.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/green\/theme-default.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/green\/theme-default.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/base.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/base.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/contact.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/courses.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/courses.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/events.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/events.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/home.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/home.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/mixins.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/responsive.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/styles-purple.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/less\/purple\/styles-purple.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/purple\/theme-default.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/purple\/theme-default.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/base.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/base.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/contact.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/courses.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/courses.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/events.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/events.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/home.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/home.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/mixins.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/responsive.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/styles-red.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/less\/red\/styles-red.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/less\/red\/theme-default.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/less\/red\/theme-default.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/scripts\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/scripts\/app-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/controllers.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/scripts\/controllers-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/directive.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/scripts\/directive-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/filter.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/scripts\/filter-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/scripts\/services.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/scripts\/services-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/styles\/custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/styles\/custom-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/styles\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/styles\/styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/test\/data\/businessList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/businessList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/test\/data\/chapterList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/chapterList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/test\/data\/courseList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/courseList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/test\/data\/deviceList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/deviceList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/test\/data\/postList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/postList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/test\/data\/representationList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/representationList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/test\/data\/sectionList.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/test\/data\/sectionList-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/upload\/carousel\/-zKpp_jKgKOFJIlHHx2hK1u0.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/-zKpp_jKgKOFJIlHHx2hK1u0.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/0-1pVCOtWnFE8oml11P_fjci.png": {
+		"ft": 32768,
+		"iS": 74795,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/0-1pVCOtWnFE8oml11P_fjci.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/12hCwoVNF8dnshcTfZ87FtWK.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/12hCwoVNF8dnshcTfZ87FtWK.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/14533dc19a2a8ee8bfb22e1f91f3c660": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/14533dc19a2a8ee8bfb22e1f91f3c660",
+		"oF": 0
+		},
+	"\/upload\/carousel\/1As75Nh5DHvfvGHsn94Zm1zB.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/1As75Nh5DHvfvGHsn94Zm1zB.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/39386b2bac889f7ad5830b728143bc94": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/39386b2bac889f7ad5830b728143bc94",
+		"oF": 0
+		},
+	"\/upload\/carousel\/3ofZGOR896gNO1Dl6pK0Bc8L.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/3ofZGOR896gNO1Dl6pK0Bc8L.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/3oKYjyTCMXkiOIrm1XRoUuqw.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/3oKYjyTCMXkiOIrm1XRoUuqw.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/503daaafb0d5af33b42badb5b4f70505": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/503daaafb0d5af33b42badb5b4f70505",
+		"oF": 0
+		},
+	"\/upload\/carousel\/76d88def1d401daa997703079295ecf1": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/76d88def1d401daa997703079295ecf1",
+		"oF": 0
+		},
+	"\/upload\/carousel\/7N_hl3iNg98DT34KhQy7T2NX.jpg": {
+		"ft": 16384,
+		"iS": 50786,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/7N_hl3iNg98DT34KhQy7T2NX.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/8f8a40e9bda548cf15a8ce360a34057b": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/8f8a40e9bda548cf15a8ce360a34057b",
+		"oF": 0
+		},
+	"\/upload\/carousel\/8gSy-kotVL5KflfDrHA3nweA.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/8gSy-kotVL5KflfDrHA3nweA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/9o9iI8NioGoya7RjDtyfHG9y.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/9o9iI8NioGoya7RjDtyfHG9y.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/9s-uIh9DS5S0nNM7DsP-GH7m.jpg": {
+		"ft": 16384,
+		"iS": 169650,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/9s-uIh9DS5S0nNM7DsP-GH7m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/9ThmuO2iALM3geea8KculfBg.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/9ThmuO2iALM3geea8KculfBg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/_M7KQw1TC8_pMephH-Uc3YGI.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 1,
+		"oAP": "\/upload\/carousel\/_M7KQw1TC8_pMephH-Uc3YGI.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/AWe-xTC2Fj-tTK_ofJHcM-xu.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/AWe-xTC2Fj-tTK_ofJHcM-xu.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/B_Us3j76gv8P4Wv0hXnptoCK.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/B_Us3j76gv8P4Wv0hXnptoCK.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/BI7pM3GNzXeJOpzmARItwRuM.png": {
+		"ft": 32768,
+		"iS": 308558,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/BI7pM3GNzXeJOpzmARItwRuM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/BqDxMhhI2D-0SpkopmJxyHKs.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/BqDxMhhI2D-0SpkopmJxyHKs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/cc115b7b0a5bb2cada08466f7512f7a5": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/cc115b7b0a5bb2cada08466f7512f7a5",
+		"oF": 0
+		},
+	"\/upload\/carousel\/CV0HwHa2K3KQ6MFAd8MQfRjf.png": {
+		"ft": 32768,
+		"iS": 308558,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/CV0HwHa2K3KQ6MFAd8MQfRjf.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/dBoOPg6Z-dafdaljXcdMbk8o.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/dBoOPg6Z-dafdaljXcdMbk8o.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/e1573a11d3967af22829c79d3e030b9c": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/carousel\/e1573a11d3967af22829c79d3e030b9c",
+		"oF": 0
+		},
+	"\/upload\/carousel\/EEMP2k7uhfm62g-Jt3o2jABg.jpg": {
+		"ft": 16384,
+		"iS": 134662,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/EEMP2k7uhfm62g-Jt3o2jABg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/Em7cmrNVy5uACUXqonckWlPC.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/Em7cmrNVy5uACUXqonckWlPC.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/EOEl8CPAY3XnAIIXpWvInkSp.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/EOEl8CPAY3XnAIIXpWvInkSp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/eRILy8VgeCcGoLPEv9VupSMl.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/eRILy8VgeCcGoLPEv9VupSMl.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/FfVAWq4Njb24f8xgu6Td_9eg.png": {
+		"ft": 32768,
+		"iS": 308558,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/FfVAWq4Njb24f8xgu6Td_9eg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/FL4nav0kWsNS6ylhwrKmJ5VT.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/FL4nav0kWsNS6ylhwrKmJ5VT.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/FLN6gwTLlNOcScelR0uYYQSg.png": {
+		"ft": 32768,
+		"iS": 74795,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/FLN6gwTLlNOcScelR0uYYQSg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/GZfisnZMm-daHeANhgb0SF7C.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/GZfisnZMm-daHeANhgb0SF7C.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/H10QtnUxfB0OMUp_xsVjjsFI.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/H10QtnUxfB0OMUp_xsVjjsFI.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/hr1eo3pdRgPKwMQNvZ-evpey.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/hr1eo3pdRgPKwMQNvZ-evpey.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/HZysnhqks0jN7_F6KP-ws-fi.jpg": {
+		"ft": 16384,
+		"iS": 2255898,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/HZysnhqks0jN7_F6KP-ws-fi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/IPG6EkhopEuUUTqbWIm9MLWM.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/IPG6EkhopEuUUTqbWIm9MLWM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/kgeeMJ-vUXwdyFayDQnLKrhR.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/kgeeMJ-vUXwdyFayDQnLKrhR.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/L2yxRaElPskEdFd8qllPWJBG.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/L2yxRaElPskEdFd8qllPWJBG.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/L49ZBVHTJ43vl6rsoHN5RVs8.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/L49ZBVHTJ43vl6rsoHN5RVs8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/LgyL0m-4WcGQfqXt84svsd2v.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/LgyL0m-4WcGQfqXt84svsd2v.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/lZzlbbyNqFx64EStZiAO9hpD.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/lZzlbbyNqFx64EStZiAO9hpD.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/MGkrtk_QHIFw6-LA4j0Jypmh.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/MGkrtk_QHIFw6-LA4j0Jypmh.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/MQK4bhSal3Xyu3T7xY_-cOJ0.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/MQK4bhSal3Xyu3T7xY_-cOJ0.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/MT5E-ydD80opn0PNMrUV6D1q.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/MT5E-ydD80opn0PNMrUV6D1q.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/OKtJwkcuRSfDRPy-6vlY9270.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/OKtJwkcuRSfDRPy-6vlY9270.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/oYyP42QWtlEZ8PR-dIXrHpPz.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/oYyP42QWtlEZ8PR-dIXrHpPz.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/p58iCCZFLpX3Ihz0XHjdZSBP.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/p58iCCZFLpX3Ihz0XHjdZSBP.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/pOB9y9X2XktZSSc1KJUn77be.jpg": {
+		"ft": 16384,
+		"iS": 115716,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/pOB9y9X2XktZSSc1KJUn77be.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/q0SCNLUZ4Q4lGMj9TAedwqfW.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/q0SCNLUZ4Q4lGMj9TAedwqfW.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/Qufqr_dj4XldOKH5o3S-Rp5S.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/Qufqr_dj4XldOKH5o3S-Rp5S.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/RXbSKJZuMGH8uX388Gig_VFn.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/RXbSKJZuMGH8uX388Gig_VFn.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/sDNPwZ3jg8yemYJZso8dj4oS.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/sDNPwZ3jg8yemYJZso8dj4oS.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/SYZcllGWOkeRO299AqxbzY25.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/SYZcllGWOkeRO299AqxbzY25.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/TSnRLv5kb2G0mLkNZolEIlTY.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/TSnRLv5kb2G0mLkNZolEIlTY.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/vAiMEOf_WDrPduuiOtNHRhpJ.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/vAiMEOf_WDrPduuiOtNHRhpJ.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/wKbfiaE2IWiULBv2qRHM6EW7.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/wKbfiaE2IWiULBv2qRHM6EW7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/wStE1hwGkxXe_GAm14SxCFOA.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/wStE1hwGkxXe_GAm14SxCFOA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/XK5KeTbBSotIMIWVU4yovOA1.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/XK5KeTbBSotIMIWVU4yovOA1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/xTmKDxAwOOC3GI9LBubmC4im.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/xTmKDxAwOOC3GI9LBubmC4im.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/Yflg8HvXQjEMXeOK66ClsPaH.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/Yflg8HvXQjEMXeOK66ClsPaH.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/carousel\/yPKMb-4hnFUrLMvZkBjrIOxW.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/yPKMb-4hnFUrLMvZkBjrIOxW.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/carousel\/zp9aaBxXWd9DvwXVE8yjOCTW.png": {
+		"ft": 32768,
+		"iS": 46667,
+		"oA": 0,
+		"oAP": "\/upload\/carousel\/zp9aaBxXWd9DvwXVE8yjOCTW.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/upload\/news\/-bE02Ls8_PVhtg0m91auAaIt.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/-bE02Ls8_PVhtg0m91auAaIt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/-DrTD6TLE9VO6NmAla03Vtg9.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/-DrTD6TLE9VO6NmAla03Vtg9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/3P0Xso7gQBAmqh2haN95_Px4.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/3P0Xso7gQBAmqh2haN95_Px4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/3p2T77hNCHnBI7bf4qz2wBCl.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/3p2T77hNCHnBI7bf4qz2wBCl.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/4S-PSI5oDet-nDJAX2iDdG5w.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/4S-PSI5oDet-nDJAX2iDdG5w.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/5iF50jDclcR1cBp2ru6yBpYF.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/5iF50jDclcR1cBp2ru6yBpYF.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/8UPwUl7bnj55whzc0rR5V25S.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/8UPwUl7bnj55whzc0rR5V25S.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/_deqy-lnWu0uKS9kfEzzGkvc.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 1,
+		"oAP": "\/upload\/news\/_deqy-lnWu0uKS9kfEzzGkvc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/_OQmhTLSVNxMfjZrNAGSzpsU.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 1,
+		"oAP": "\/upload\/news\/_OQmhTLSVNxMfjZrNAGSzpsU.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/anOFAahF-0ougK6Y-mMKBghG.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/anOFAahF-0ougK6Y-mMKBghG.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/at_F7N9UhzIls6URPGpv5bu3.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/at_F7N9UhzIls6URPGpv5bu3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/D0IDTz-QKCqE76kCOvfjwAXD.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/D0IDTz-QKCqE76kCOvfjwAXD.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/D78w2a1nD9_53SfsE77HCZtn.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/D78w2a1nD9_53SfsE77HCZtn.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/dfkPxSYRCbf_gwQzlqKvrRXC.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/dfkPxSYRCbf_gwQzlqKvrRXC.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/fxaOtgNoFKuFvYm3iiz21w6Z.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/fxaOtgNoFKuFvYm3iiz21w6Z.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/Gh-1GzuHSA0QFfeP_V0LUJLx.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/Gh-1GzuHSA0QFfeP_V0LUJLx.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/gnbr2ZhcWQsdeBbKzkS2_wzP.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/gnbr2ZhcWQsdeBbKzkS2_wzP.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/Gs2lkYMhx7LVPmm1cGBzo3pq.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/Gs2lkYMhx7LVPmm1cGBzo3pq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/HnBTynT_8sEuPhGxUgCabeXe.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/HnBTynT_8sEuPhGxUgCabeXe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/iTFam8wNmeCQPutFQqhq3L0T.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/iTFam8wNmeCQPutFQqhq3L0T.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/mXhU9nv7jy92D4B-dwkE4pIa.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/mXhU9nv7jy92D4B-dwkE4pIa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/N8q9NZI6EQG9ICFsQepwG0fP.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/N8q9NZI6EQG9ICFsQepwG0fP.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/n8wTlp3qILMwU1r6r4VXyt1j.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/n8wTlp3qILMwU1r6r4VXyt1j.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/nTXVb_Sxatyq2y8xJMQulBTO.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/nTXVb_Sxatyq2y8xJMQulBTO.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/qQmI1ovD594VvjkN6DGyu8o_.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/qQmI1ovD594VvjkN6DGyu8o_.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/r7uMxyB--zFr0Zsw3mSqB1SZ.jpg": {
+		"ft": 16384,
+		"iS": 151486,
+		"oA": 0,
+		"oAP": "\/upload\/news\/r7uMxyB--zFr0Zsw3mSqB1SZ.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/u568AZ-a3SpLk0WkKYGVX4Gd.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/u568AZ-a3SpLk0WkKYGVX4Gd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/uwMbuXeWxzRgoeFZ_BuC3Z-6.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/uwMbuXeWxzRgoeFZ_BuC3Z-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/W4cKwuNfNmC_2SEuMS881ESS.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/W4cKwuNfNmC_2SEuMS881ESS.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/xmhrGBkMUY5bMhBrhlzYDxUp.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/xmhrGBkMUY5bMhBrhlzYDxUp.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/z2pZo4ujG5g_t0i3CU0K3baw.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/z2pZo4ujG5g_t0i3CU0K3baw.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/news\/ZfdALGLgID0PfdEEGoi1hGUq.jpg": {
+		"ft": 16384,
+		"iS": 137421,
+		"oA": 0,
+		"oAP": "\/upload\/news\/ZfdALGLgID0PfdEEGoi1hGUq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/pdf\/2016\/11\/09\/BFB2633490DEC266935993FB8CDD6055.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/pdf\/2016\/11\/09\/BFB2633490DEC266935993FB8CDD6055.pdf",
+		"oF": 0
+		},
+	"\/upload\/pdf\/2016\/12\/05\/535F94A792D7A2321D6593AB00A7E3D7.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/pdf\/2016\/12\/05\/535F94A792D7A2321D6593AB00A7E3D7.pdf",
+		"oF": 0
+		},
+	"\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/content\/DL_0.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/content\/DL_0.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/content\/SX_XFXT_PT.flv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/content\/SX_XFXT_PT.flv",
+		"oF": 0
+		},
+	"\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/content\/SX_XFXT_PW.flv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/content\/SX_XFXT_PW.flv",
+		"oF": 0
+		},
+	"\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/data\/swf.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/data\/swf.xml",
+		"oF": 0
+		},
+	"\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/index.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/a2e5ce5ca33ee8778ef80490ca4a4c28\/index.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/DL_0.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/DL_0.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/DL_1.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/DL_1.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/DL_2.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/DL_2.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/SX_XFXT_PT.flv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/SX_XFXT_PT.flv",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/SX_XFXT_PW.flv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/content\/SX_XFXT_PW.flv",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/data\/swf.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/data\/swf.xml",
+		"oF": 0
+		},
+	"\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/index.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/b20fd1a350d3fb0cf09dce39b2cd89c1\/index.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/content\/DL_0.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/content\/DL_0.swf",
+		"oF": 0
+		},
+	"\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/content\/SX_XFXT_PT.flv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/content\/SX_XFXT_PT.flv",
+		"oF": 0
+		},
+	"\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/content\/SX_XFXT_PW.flv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/content\/SX_XFXT_PW.flv",
+		"oF": 0
+		},
+	"\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/data\/swf.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/data\/swf.xml",
+		"oF": 0
+		},
+	"\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/index.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/swf\/ed24dbfc13b5f39804d26f06e460c3a1\/index.swf",
+		"oF": 0
+		},
+	"\/upload\/thumbnail\/02E7037A96E4B635CEE3F3B0F829AC8E.jpg": {
+		"ft": 16384,
+		"iS": 20743,
+		"oA": 0,
+		"oAP": "\/upload\/thumbnail\/02E7037A96E4B635CEE3F3B0F829AC8E.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/thumbnail\/2016\/10\/29\/2ECF7CB5D7B4F9F27012B21ABC9800DE.16": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/thumbnail\/2016\/10\/29\/2ECF7CB5D7B4F9F27012B21ABC9800DE.16",
+		"oF": 0
+		},
+	"\/upload\/thumbnail\/2016\/10\/29\/78303A05F4A9C4A4C375D9381529F85C.16": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/thumbnail\/2016\/10\/29\/78303A05F4A9C4A4C375D9381529F85C.16",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/06\/15\/2C1CC298B7182667BBEF56C5FBCA5486.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/06\/15\/2C1CC298B7182667BBEF56C5FBCA5486.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/06\/15\/DFACCB0605FB352D10CAC743CDC3CDA7.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/06\/15\/DFACCB0605FB352D10CAC743CDC3CDA7.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/06\/18\/62B85096B09976CC97180D05FDB90477.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/06\/18\/62B85096B09976CC97180D05FDB90477.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/06\/18\/6A727F2AB3D9202CE9BBF9A016B7B500.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/06\/18\/6A727F2AB3D9202CE9BBF9A016B7B500.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/07\/05\/F8E8D164FCA8E3D3DD693B493F689218.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/07\/05\/F8E8D164FCA8E3D3DD693B493F689218.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/07\/06\/ADBC8AE2527B72DCC77AFDCC6F9784EE.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/07\/06\/ADBC8AE2527B72DCC77AFDCC6F9784EE.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/07\/10\/1C48ED12B34F7D2BC28675C316596ACF.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/07\/10\/1C48ED12B34F7D2BC28675C316596ACF.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/07\/10\/F945A16182DC975D7886A4323C74D069.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/07\/10\/F945A16182DC975D7886A4323C74D069.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/08\/23\/798E367A27BA6C57C31031A4A9EDDFC1.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/08\/23\/798E367A27BA6C57C31031A4A9EDDFC1.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/14\/5C56618C0BA033BDC73C5F9D8EEBCC78.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/14\/5C56618C0BA033BDC73C5F9D8EEBCC78.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/14\/A30FAEC0C0AC6AC27B1BF0974AB7203A.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/14\/A30FAEC0C0AC6AC27B1BF0974AB7203A.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/14\/BD02A12E4935CF4F4FE0F12E19315CB5.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/14\/BD02A12E4935CF4F4FE0F12E19315CB5.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/16\/05DE41BFC1E0CF0ABE29EEAEBC170C67.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/16\/05DE41BFC1E0CF0ABE29EEAEBC170C67.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/16\/355799BA72A015CADDB75D76E20FCA18.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/16\/355799BA72A015CADDB75D76E20FCA18.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/16\/3BB679463C3BC3C269E6A519C679DFB6.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/16\/3BB679463C3BC3C269E6A519C679DFB6.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/09\/16\/6234E6D1FAF1543B0611EB5822372DBC.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/09\/16\/6234E6D1FAF1543B0611EB5822372DBC.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/21\/9C73C4A637E2D81FB8401E61DF01B68E.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/21\/9C73C4A637E2D81FB8401E61DF01B68E.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/27\/DB0F826BE20ABC249357841B05965983.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/27\/DB0F826BE20ABC249357841B05965983.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/27\/E805FB47EE3198C9FE271A8B9C90E88E.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/27\/E805FB47EE3198C9FE271A8B9C90E88E.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/010BA00CA9C87A6297A3B64A7C1972FF.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/010BA00CA9C87A6297A3B64A7C1972FF.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/29F5A8952E01F8EA66EF392CFFBF6CB6.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/29F5A8952E01F8EA66EF392CFFBF6CB6.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/3CEEC0AEEC5430BC9F55A3715B46DFDC.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/3CEEC0AEEC5430BC9F55A3715B46DFDC.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/42EE65B2ED4C4CF88BEC910450B3F818.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/42EE65B2ED4C4CF88BEC910450B3F818.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/592C9F5CD1B0D390E81357A5F6830ECA.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/592C9F5CD1B0D390E81357A5F6830ECA.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/AE5192323D1725D2741CD2DA3D60D3B2.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/AE5192323D1725D2741CD2DA3D60D3B2.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/B2A4A9894EFC3CC37951B30CB9B5C0B3.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/B2A4A9894EFC3CC37951B30CB9B5C0B3.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/CFA54864562EEF9FC6C30347837F3DDA.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/CFA54864562EEF9FC6C30347837F3DDA.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/D20514B6668B72197866DF464BAF2B36.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/D20514B6668B72197866DF464BAF2B36.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/D8F77127BF26F3F446227B749EFC566F.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/D8F77127BF26F3F446227B749EFC566F.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/28\/E43A3C4E3D6EF5E96DC240E920B931D4.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/28\/E43A3C4E3D6EF5E96DC240E920B931D4.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/29\/332C758D0A7FE0186EDE9C0078B9ACCF.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/29\/332C758D0A7FE0186EDE9C0078B9ACCF.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/29\/C70AB2331BF03A2F1E6C029264974BEE.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/29\/C70AB2331BF03A2F1E6C029264974BEE.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/10\/29\/EFD9683E0DC6D4F338700C06036AB4E8.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/10\/29\/EFD9683E0DC6D4F338700C06036AB4E8.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/11\/03\/41EEABFDDD7360B2A2D157027E4B088A.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/11\/03\/41EEABFDDD7360B2A2D157027E4B088A.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/11\/07\/95773752230AAD657BD0AC5F8C7CD96D.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/11\/07\/95773752230AAD657BD0AC5F8C7CD96D.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/11\/09\/1FA7ED0160924B44DBF0ACDAD5A2F256.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/11\/09\/1FA7ED0160924B44DBF0ACDAD5A2F256.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/11\/09\/91CA86ADF8666B0484422FACF8891768.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/11\/09\/91CA86ADF8666B0484422FACF8891768.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/11\/09\/91FE6F3AA125F1D0292245FBA4EDDE14.MP4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/11\/09\/91FE6F3AA125F1D0292245FBA4EDDE14.MP4",
+		"oF": 0
+		},
+	"\/upload\/video\/2016\/11\/09\/C52E24696E5426CDA0474B8CF5829972.rar": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/2016\/11\/09\/C52E24696E5426CDA0474B8CF5829972.rar",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/adlcp_rootv1p2.xsd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/adlcp_rootv1p2.xsd",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/playerproperties.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/playerproperties.xml",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/presentation.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/presentation.xml",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/slide255.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/slide255.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l1.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l1.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l10.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l10.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l2.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l2.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l4.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l4.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l6.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l6.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l7.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l7.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l8.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l8.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/bgd1l9.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/bgd1l9.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_10.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_10.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_11.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_11.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_12.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_12.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_13.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_13.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_14.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_14.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_15.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_15.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_16.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_16.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_18.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_18.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_19.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_19.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_21.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_21.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_25.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_25.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_26.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_26.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_27.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_27.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_28.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_28.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_30_ver.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_30_ver.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_31.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_31.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_33.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_33.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_34.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_34.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_35.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_35.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_37.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_37.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_38ver2.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_38ver2.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_40.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_40.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_41.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_41.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_45.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_45.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_46.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_46.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_47.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_47.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_50.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_50.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_51_ver.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_51_ver.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_52.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_52.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/fm_9.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/fm_9.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/notes\/notesbig3.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/notes\/notesbig3.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/notes\/notessmall3.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/notes\/notessmall3.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/integration.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/integration.xml",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_ButtonClick.mp3": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_ButtonClick.mp3",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_ButtonHover.mp3": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_ButtonHover.mp3",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_ControlClick.mp3": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_ControlClick.mp3",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_WindowClose.mp3": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_WindowClose.mp3",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_WindowOpen.mp3": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/_WindowOpen.mp3",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/data.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/data.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/Slide455eeb96-9383-4b6a-b6df-c0d159c18054.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/quizmaker_584\/quiz_content\/Slide455eeb96-9383-4b6a-b6df-c0d159c18054.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide1.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide1.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide10.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide10.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide11.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide11.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide12.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide12.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide13.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide13.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide14.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide14.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide15.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide15.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide16.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide16.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide17.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide17.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide18.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide18.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide19.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide19.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide2.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide2.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide20.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide20.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide21.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide21.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide22.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide22.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide23.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide23.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide24.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide24.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide25.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide25.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide26.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide26.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide27.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide27.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide28.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide28.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide29.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide29.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide3.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide3.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide30.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide30.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide31.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide31.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide32.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide32.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide33.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide33.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide34.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide34.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide35.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide35.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide36.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide36.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide37.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide37.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide38.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide38.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide39.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide39.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide4.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide4.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide40.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide40.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide41.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide41.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide42.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide42.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide43.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide43.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide44.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide44.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide45.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide45.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide46.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide46.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide47.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide47.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide48.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide48.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide49.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide49.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide5.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide5.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide50.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide50.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide52.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide52.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide6.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide6.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide7.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide7.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide8.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide8.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/slide9.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/slide9.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb1.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb1.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb10.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb10.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb11.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb11.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb12.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb12.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb13.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb13.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb14.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb14.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb15.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb15.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb16.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb16.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb17.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb17.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb18.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb18.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb19.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb19.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb2.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb2.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb20.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb20.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb21.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb21.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb22.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb22.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb23.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb23.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb24.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb24.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb25.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb25.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb26.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb26.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb27.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb27.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb28.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb28.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb29.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb29.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb3.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb3.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb30.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb30.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb31.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb31.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb32.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb32.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb33.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb33.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb34.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb34.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb35.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb35.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb36.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb36.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb37.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb37.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb38.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb38.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb39.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb39.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb4.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb4.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb40.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb40.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb41.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb41.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb42.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb42.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb43.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb43.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb44.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb44.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb45.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb45.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb46.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb46.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb47.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb47.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb48.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb48.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb49.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb49.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb5.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb5.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb50.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb50.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb51.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb51.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb52.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb52.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb6.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb6.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb7.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb7.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb8.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb8.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/data\/swf\/tb9.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/data\/swf\/tb9.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/ims_xml.xsd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/ims_xml.xsd",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/imscp_rootv1p1p2.xsd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/imscp_rootv1p1p2.xsd",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/imsmanifest.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/imsmanifest.xml",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/imsmd_rootv1p2p1.xsd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/imsmd_rootv1p2p1.xsd",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/index_lms.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/index_lms.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/lms\/AICCComm.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/lms\/AICCComm.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/lms\/AICCFunctions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/AICCFunctions-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/API.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/API-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/APIConstants.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/APIConstants-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/blank.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/lms\/blank.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/lms\/browsersniff.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/browsersniff-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/Configuration.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/Configuration-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/goodbye.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/lms\/goodbye.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/lms\/lms.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/lms-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/LMSAPI.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/LMSAPI-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/NONEFunctions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/NONEFunctions-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/SCORM2004Functions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/SCORM2004Functions-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/SCORMDiscovery.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/SCORMDiscovery-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/SCORMFunctions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/SCORMFunctions-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/lms\/UtilityFunctions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/lms\/UtilityFunctions-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/new2.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/new2.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/annotations.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/annotations.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/ast_alert.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/ast_alert.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/ast_loader.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/ast_loader.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/ast_navicons.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/ast_navicons.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/ast_notes.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/ast_notes.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/ast_remote.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/ast_remote.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/ast_vidpresenter.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/ast_vidpresenter.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/attach.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/attach.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/blank.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/blank.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/button.gif": {
+		"ft": 4194304,
+		"iS": 2321,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/player\/button.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/upload\/video\/scorm\/player\/flashcommand.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/player\/flashcommand-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/player\/logopanel.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/logopanel.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/mod_colorizer.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/mod_colorizer.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/mod_colorizer_lib.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/mod_colorizer_lib.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/mod_engage.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/mod_engage.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/mod_exit.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/mod_exit.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/mod_quiz.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/mod_quiz.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/mod_reference.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/mod_reference.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/null.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/null.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/PassVar.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/PassVar.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/playershell.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/playershell.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/slidegroup.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/slidegroup.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/stealthray.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/stealthray.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/utils.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/upload\/video\/scorm\/player\/utils-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/upload\/video\/scorm\/player\/VideoPlayer.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/VideoPlayer.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/VideoPlayer.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/VideoPlayer.swf",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/player\/zoom.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/player\/zoom.html",
+		"oF": 0
+		},
+	"\/upload\/video\/scorm\/start.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/upload\/video\/scorm\/start.html",
+		"oF": 0
+		},
+	"\/views\/footer.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/footer.html",
+		"oF": 0
+		},
+	"\/views\/header.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/header.html",
+		"oF": 0
+		},
+	"\/views\/home.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/home.html",
+		"oF": 0
+		},
+	"\/views\/login.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/login.html",
+		"oF": 0
+		},
+	"\/views\/register.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/register.html",
+		"oF": 0
+		},
+	"\/views\/subscribe.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/subscribe.html",
+		"oF": 0
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 518241227,
+	"displayValue": "ico",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "brackets_green"
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigFileHandlingType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": 0
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": 0
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": 0
+			},
+		"es2015-block-scoped-functions": {
+			"active": 0
+			},
+		"es2015-block-scoping": {
+			"active": 0
+			},
+		"es2015-classes": {
+			"active": 0
+			},
+		"es2015-computed-properties": {
+			"active": 0
+			},
+		"es2015-constants": {
+			"active": 0
+			},
+		"es2015-destructuring": {
+			"active": 0
+			},
+		"es2015-duplicate-keys": {
+			"active": 0
+			},
+		"es2015-for-of": {
+			"active": 0
+			},
+		"es2015-function-name": {
+			"active": 0
+			},
+		"es2015-literals": {
+			"active": 0
+			},
+		"es2015-modules-amd": {
+			"active": 0
+			},
+		"es2015-modules-commonjs": {
+			"active": 0
+			},
+		"es2015-modules-systemjs": {
+			"active": 0
+			},
+		"es2015-modules-umd": {
+			"active": 0
+			},
+		"es2015-object-super": {
+			"active": 0
+			},
+		"es2015-parameters": {
+			"active": 0
+			},
+		"es2015-shorthand-properties": {
+			"active": 0
+			},
+		"es2015-spread": {
+			"active": 0
+			},
+		"es2015-sticky-regex": {
+			"active": 0
+			},
+		"es2015-template-literals": {
+			"active": 0
+			},
+		"es2015-typeof-symbol": {
+			"active": 0
+			},
+		"es2015-unicode-regex": {
+			"active": 0
+			},
+		"es3-member-expression-literals": {
+			"active": 0
+			},
+		"es3-property-literals": {
+			"active": 0
+			},
+		"es5-property-mutators": {
+			"active": 0
+			},
+		"eval": {
+			"active": 0
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": 0
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": 0
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": 0
+			},
+		"syntax-class-properties": {
+			"active": 0
+			},
+		"syntax-decorators": {
+			"active": 0
+			},
+		"syntax-do-expressions": {
+			"active": 0
+			},
+		"syntax-export-extensions": {
+			"active": 0
+			},
+		"syntax-flow": {
+			"active": 0
+			},
+		"syntax-function-bind": {
+			"active": 0
+			},
+		"syntax-function-sent": {
+			"active": 0
+			},
+		"syntax-jsx": {
+			"active": 0
+			},
+		"syntax-object-rest-spread": {
+			"active": 0
+			},
+		"undeclared-variables-check": {
+			"active": 0
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelPresetType": 193,
+	"babelRetainLines": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerAutoCreateInfoFile": 1,
+	"bowerInstallDevDependencies": 0,
+	"bowerSaveDependencies": 1,
+	"bowerSaveDevDependencies": 0,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 1,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always'}"
+			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-around-directive": {
+			"active": 0,
+			"optionString": "{'before': 'always', 'after': 'always'}"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-after-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"newline-before-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 1,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': false}"
+			},
+		"no-self-compare": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-template-curly-in-string": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', {'avoidEscape': true, 'allowTemplateLiterals': true}"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-yield": {
+			"active": 1,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http:\/\/localhost:8888",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"outputStyle": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"quality": 100
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 0
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"ieCompatibility": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "stylus",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"jsxMode": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 2,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
+		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"previewPathAddition": "",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"sourceFolderName": "source",
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "3"
+}

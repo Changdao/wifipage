@@ -1,0 +1,5 @@
+[
+     {"id":1,"name":"值守","remark":"值守","sortNumber":99999}
+    ,{"id":2,"name":"操作","remark":"操作","sortNumber":9999}
+    ,{"id":3,"name":"值守","remark":"值守","sortNumber":999}
+]

@@ -1,0 +1,96 @@
+<div class="container">
+  <form class="form-horizontal">
+    <h1>会员注册</h1>
+    <hr>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">手机号码</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="手机号码">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 col-xs-12 control-label">验证码</label>
+      <div class="col-sm-4 col-xs-8">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="验证码">
+      </div>
+      <div class="col-sm-2 col-xs-4">
+        <button type="button" class="btn btn-primary btn-block">发送</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">密码</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="密码">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">确认密码</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="确认密码">
+      </div>
+    </div>
+    <div class="form-group text-center">
+      <label>提示：建议使用本人实名登记的手机，如果不使用因此而产生的一切风险和损失，本平台不承担。</label>
+    </div>
+    <div class="col-sm-offset-3 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">我已阅读并同意《优币用户协议》
+        </label>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>个人认证</h1>
+    <hr>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">姓名</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="inputPassword3" placeholder="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">身份证正面</label>
+      <div class="col-sm-6">
+        <img ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($file)" >
+      </div>
+      <div class="col-sm-offset-3 col-sm-10">
+        <label>保证文字清晰可识别图片大小不要超过1MB</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">身份证反面</label>
+      <div class="col-sm-6">
+        <img ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($file)" >
+      </div>
+      <div class="col-sm-offset-3 col-sm-6">
+        <label>保证文字清晰可识别图片大小不要超过1MB</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-3 control-label">手持身份证照片</label>
+      <div class="col-sm-6">
+        <img ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($file)" >
+      </div>
+      <div class="col-sm-offset-3 col-sm-6">
+        <label>保证文字清晰可识别图片大小不要超过1MB</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> 我承诺所提供资料为我本人所有，不存在盗用别人资料的情况。
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary col-sm-2 col-xs-5">注册</button>
+        <button type="submit" ui-sref="app.login" class="btn btn-default col-sm-2 col-xs-offset-2 col-xs-5">直接登录</button>
+      </div>
+    </div>
+  </form>
+</div>
