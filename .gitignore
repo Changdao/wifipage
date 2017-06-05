@@ -1,5 +1,5 @@
 node_modules/
-client/app/bower_components/
+bower_components
 .idea
 .idea/
 dump.rdb
