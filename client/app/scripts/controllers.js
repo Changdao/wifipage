@@ -28,8 +28,20 @@ angular.module("ico")
                 var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
             });
         };
+        $scope.validateForm = function validateForm(){
+            var model = $scope.registerModel;
+            var valid = !!model.phone && model.phone.length == 11;
+            valid = valid && model.phoneCode;
+            valid = valid && model.password && model.confirm && model.password == model.confirm;
+            valid = valid && model.name && model.identifier && model.identifier.length == 18;
+            valid = valid && model.front.filename && model.back.filename && model.hand.filename;
+            return valid;
+        };
         $scope.registerAccount = function registerAccount(){
             var uploadData = angular.extend({}, $scope.registerModel);
+            if(!(uploadData.account)){
+                uploadData.account = uploadData.phone;
+            };
             MainRemoteResource.accountResource.signupAccount({}, uploadData).$promise
                 .then(function(success){
                     console.log(success);
