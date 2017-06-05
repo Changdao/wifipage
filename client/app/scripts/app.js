@@ -36,7 +36,7 @@ var app = angular.module('ico', [
                     'content@': {
                         templateUrl: 'views/login.html',
                         controller: 'LoginController'
-                    },
+                    }
                 }
             })
             .state('app.register', {
@@ -45,7 +45,7 @@ var app = angular.module('ico', [
                     'content@': {
                         templateUrl: 'views/register.html',
                         controller: 'RegisterController'
-                    },
+                    }
                 }
             })
             .state('app.subscribe', {
@@ -54,7 +54,7 @@ var app = angular.module('ico', [
                     'content@': {
                         templateUrl: 'views/subscribe.html',
                         controller: 'SubscribeController'
-                    },
+                    }
                 }
             })
           ;

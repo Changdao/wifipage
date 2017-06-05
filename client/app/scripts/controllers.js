@@ -4,8 +4,13 @@ angular.module("ico")
     .controller('HeaderController', ['$scope', function($scope) {}])
     .controller("ContentController", ["$scope", function($scope) {}])
     .controller("LoginController", ["$scope", function($scope) {}])
-    .controller("RegisterController", ["$scope", 'Upload', 'baseURL', function($scope, Upload, baseURL) {
-        $scope.upload = function(file) {
+    .controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", function($scope, Upload, baseURL, MainRemoteResource) {
+        $scope.registerModel = {
+            front:{},
+            back:{},
+            hand:{}
+        };
+        $scope.upload = function(file, receiverObject) {
             var nofile = !file || file.length == 0 || !file[0];
             if(nofile){
                 return;
@@ -14,13 +19,23 @@ angular.module("ico")
                 url: baseURL+'/wifiauth/upload',
                 data: { file: file[0], 'username': $scope.username }
             }).then(function(resp) {
-                console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
-            }, function(resp) {
-                console.log('Error status: ' + resp.status);
+                //success
+                angular.extend(receiverObject, resp.data);
+            }, function(error) {
+                //error
             }, function(evt) {
+                //process
                 var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-                console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
             });
+        };
+        $scope.registerAccount = function registerAccount(){
+            var uploadData = angular.extend({}, $scope.registerModel);
+            MainRemoteResource.accountResource.signupAccount({}, uploadData).$promise
+                .then(function(success){
+                    console.log(success);
+                }, function(error){
+                    console.log(error);
+                });
         };
     }])
     .controller("SubscribeController", ["$scope", function($scope) {}]);

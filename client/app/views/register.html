@@ -3,30 +3,30 @@
         <h1>会员注册</h1>
         <hr>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">手机号码</label>
+            <label for="register_phone" class="col-sm-3 control-label">手机号码</label>
             <div class="col-sm-6">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="手机号码">
+                <input type="phone" class="form-control" id="register_phone" placeholder="手机号码" ng-model="registerModel.phone">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 col-xs-12 control-label">验证码</label>
+            <label for="register_code" class="col-sm-3 col-xs-12 control-label">验证码</label>
             <div class="col-sm-4 col-xs-8">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="验证码">
+                <input type="phone" class="form-control" id="register_code" placeholder="验证码" ng-model="registerModel.phoneCode">
             </div>
             <div class="col-sm-2 col-xs-4">
                 <button type="button" class="btn btn-primary btn-block">发送</button>
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">密码</label>
+            <label for="register_password" class="col-sm-3 control-label">密码</label>
             <div class="col-sm-6">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="密码">
+                <input type="password" class="form-control" id="register_password" placeholder="密码" ng-model="registerModel.password">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">确认密码</label>
+            <label for="register_confirm" class="col-sm-3 control-label">确认密码</label>
             <div class="col-sm-6">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="确认密码">
+                <input type="password" class="form-control" id="register_confirm" placeholder="确认密码" ng-model="registerModel.confirm">
             </div>
         </div>
         <div class="form-group text-center">
@@ -45,33 +45,39 @@
         <h1>个人认证</h1>
         <hr>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">姓名</label>
+            <label for="register_name" class="col-sm-3 control-label">姓名</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                <input type="text" class="form-control" id="register_name" placeholder="" ng-model="registerModel.name">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">身份证正面</label>
+            <label for="register_identifier" class="col-sm-3 control-label">身份证号</label>
             <div class="col-sm-6">
-                <img ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files)" >
+                <input type="text" class="form-control" id="register_identifier" placeholder="" ng-model="registerModel.identifier">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="register_front" class="col-sm-3 control-label">身份证正面</label>
+            <div class="col-sm-6">
+                <img id="register_front" ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files, registerModel.front)" >
             </div>
             <div class="col-sm-offset-3 col-sm-10">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">身份证反面</label>
+            <label for="register_back" class="col-sm-3 control-label">身份证反面</label>
             <div class="col-sm-6">
-                <img ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($file)" >
+                <img id="register_back" ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files, registerModel.back)" >
             </div>
             <div class="col-sm-offset-3 col-sm-6">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">手持身份证照片</label>
+            <label for="register_hand" class="col-sm-3 control-label">手持身份证照片</label>
             <div class="col-sm-6">
-                <img ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($file)" >
+                <img id="register_hand" ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files, registerModel.hand)" >
             </div>
             <div class="col-sm-offset-3 col-sm-6">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
@@ -88,9 +94,12 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary col-sm-2 col-xs-5">注册</button>
-                <button type="submit" ui-sref="app.login" class="btn btn-default col-sm-2 col-xs-offset-2 col-xs-5">直接登录</button>
+                <button type="submit" class="btn btn-primary col-sm-2 col-xs-5" ng-click="registerAccount()" >注册</button>
+                <a ui-sref="app.login" class="btn btn-default col-sm-2 col-xs-offset-2 col-xs-5">直接登录</a>
             </div>
         </div>
     </form>
+    <div>
+        {{registerModel | json}}
+    </div>
 </div>
