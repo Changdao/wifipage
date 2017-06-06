@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="progress" ng-show="subscribedModel.display.loading">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" ng-class="subscribedModel.display.loading ? 'active' : ''">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">用户认购记录</div>
+        <div class="panel-body">
+            <div class="row" ng-repeat="subscribedItem in subscribedModel.subscribedItemList" >
+                <div>{{subscribedItem | json }} </div>
+            </div>
+        </div>
+    </div>
+</div>

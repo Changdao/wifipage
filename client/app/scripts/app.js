@@ -1,80 +1,84 @@
 'use strict';
 var AuthorityBroadcast = 'authorityUpdated';
 var app = angular.module('ico', [
-        'angularUtils.directives.dirPagination',
-        'ngResource',
-        'ui.router',
-        'multipleSelect',
-        'ngFileUpload',
-        'textAngular',
-        // 'ae-datetimepicker'
-    ])
-    .config(function($stateProvider, $urlRouterProvider ) {
-        $stateProvider
-            .state('app', {
-                url: '/',
-                views: {
-                    'header': {
-                        templateUrl: 'views/header.html',
-                        controller: 'HeaderController'
-                    },
-                    'content': {
-                        templateUrl: 'views/home.html',
-                        controller: 'ContentController'
-                    },
-                    'footer': {
-                        templateUrl: 'views/footer.html'
-                    }
+    'angularUtils.directives.dirPagination',
+    'ngResource',
+    'ui.router',
+    'multipleSelect',
+    'ngFileUpload',
+    'textAngular',
+    "LocalStorageModule"
+]).config(function($stateProvider, $urlRouterProvider ) {
+    $stateProvider
+        .state('app', {
+            url: '/',
+            views: {
+                'header': {
+                    templateUrl: 'views/header.html',
+                    controller: 'HeaderController'
+                },
+                'content': {
+                    templateUrl: 'views/home.html',
+                    controller: 'ContentController'
+                },
+                'footer': {
+                    templateUrl: 'views/footer.html'
                 }
-            })
-            .state('app.index', {
-                url: '^/index'
-            })
-            .state('app.login', {
-                url: '^/login',
-                views: {
-                    'content@': {
-                        templateUrl: 'views/login.html',
-                        controller: 'LoginController'
-                    }
+            }
+        })
+        .state('app.index', {
+            url: '^/index'
+        })
+        .state('app.subscribelist', {
+            url: 'subscribelist',
+            views:{
+                'content@':{
+                    templateUrl:'views/subscribe_list.html',
+                    controller: 'SubscribeListController'
                 }
-            })
-            .state('app.register', {
-                url: '^/register',
-                views: {
-                    'content@': {
-                        templateUrl: 'views/register.html',
-                        controller: 'RegisterController'
-                    }
+            }
+        })
+        .state('app.login', {
+            url: 'login',
+            views: {
+                'content@': {
+                    templateUrl: 'views/login.html',
+                    controller: 'LoginController'
                 }
-            })
-            .state('app.subscribe', {
-                url: 'subscribe',
-                views: {
-                    'content@': {
-                        templateUrl: 'views/subscribe.html',
-                        controller: 'SubscribeController'
-                    }
+            }
+        })
+        .state('app.register', {
+            url: 'register',
+            views: {
+                'content@': {
+                    templateUrl: 'views/register.html',
+                    controller: 'RegisterController'
                 }
-            })
-          ;
-        $urlRouterProvider.otherwise('/register');
-    })
-    .config(['$provide', function($provide){
-        // this demonstrates how to register a new tool and add it to the default toolbar
-        $provide.decorator('taOptions', ['$delegate', function(taOptions){
-            // $delegate is the taOptions we are decorating
-            // here we override the default toolbars and classes specified in taOptions.
-            taOptions.toolbar = [
-                ['p', 'pre', 'quote'],
-                ['bold', 'italics', 'underline', 'ul', 'ol', 'redo', 'undo', 'clear'],
-                ['justifyLeft','justifyCenter','justifyRight', 'justifyFull'],
-                [ 'insertImage', 'insertLink', 'wordcount', 'charcount']
-            ];
-            return taOptions; // whatever you return will be the taOptions
-        }]);
-    }]);
-
+            }
+        })
+        .state('app.subscribe', {
+            url: 'subscribe',
+            views: {
+                'content@': {
+                    templateUrl: 'views/subscribe.html',
+                    controller: 'SubscribeController'
+                }
+            }
+        })
+    ;
+    $urlRouterProvider.otherwise('/subscribelist');
+}).config(['$httpProvider', function($httpProvider){
+    $httpProvider.interceptors.push("AuthTokenInterceptor");
+}]);
+app.run(['$rootScope', 'HttpBuffer', '$state','MainRemoteResource', function($rootScope, HttpBuffer, $state, MainRemoteResource){
+    $rootScope.$on('event:auth-refreshToken', function refreshToken(){
+        MainRemoteResource.refreshToken();
+    });
+    $rootScope.$on('event:auth-loginRequired', function gotoLogin(){
+        HttpBuffer.rejectAll();
+        $state.go("app.login");
+    });
+}]);
 // app.run(['', function(){
 
 // }]);

@@ -3,7 +3,28 @@
 angular.module("ico")
     .controller('HeaderController', ['$scope', function($scope) {}])
     .controller("ContentController", ["$scope", function($scope) {}])
-    .controller("LoginController", ["$scope", function($scope) {}])
+    .controller("LoginController", ["$scope", "MainRemoteResource", "$state", function($scope, MainRemoteResource, $state){
+        $scope.signinModel = {
+            loading: 0,
+            account: '13718961866',
+            password: '123456'
+        };
+        $scope.validSignInInfo = function validSignInInfo(){
+            let infoIsValid = $scope.signinModel.account && $scope.signinModel.password;
+            return infoIsValid;
+        };
+        $scope.signin = function signin(){
+            var credentials = {
+                username: $scope.signinModel.account,
+                password: $scope.signinModel.password
+            };
+            MainRemoteResource.getToken(credentials).then((success)=>{
+                $state.go('app.subscribelist');
+            }).catch((error)=>{
+                console.log(error);
+            });
+        };
+    }])
     .controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", function($scope, Upload, baseURL, MainRemoteResource) {
         $scope.registerModel = {
             front:{},
@@ -50,4 +71,28 @@ angular.module("ico")
                 });
         };
     }])
-    .controller("SubscribeController", ["$scope", function($scope) {}]);
+    .controller("SubscribeController", ["$scope", function($scope) {}])
+    .controller("SubscribeListController", ["$scope","MainRemoteResource", function($scope, MainRemoteResource) {
+        $scope.subscribedModel = {
+            subscribedItemList:[],
+            action:{},
+            display:{
+                loading:0
+            }
+        };
+        var model = $scope.subscribedModel;
+        model.action.loadSubscribedItemList = function loadSubscribedItemList(){
+            model.display.loading ++;
+            MainRemoteResource.subscribeResource.query({}).$promise
+                .then(function(success){
+                    model.display.loading --;
+                }, function(error){
+                    console.log(error);
+                    model.display.loading --;
+                });
+        };
+        
+        model.action.loadSubscribedItemList();
+        
+    }])
+;
