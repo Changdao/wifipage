@@ -8,7 +8,11 @@
         <div class="panel-heading">用户认购记录</div>
         <div class="panel-body">
             <div class="row" ng-repeat="subscribedItem in subscribedModel.subscribedItemList" >
-                <div>{{subscribedItem | json }} </div>
+                <div>{{subscribedItem.bankType }} </div>
+                <div>{{subscribedItem.subscribeAmount }} </div>
+                <div>{{subscribedItem.bankAccount }} </div>
+                <div>{{subscribedItem.create_at | date:'yyyy-MM-dd:hh:mm sss' }} </div>
+                <div>{{subscribedItem.status || 'waiting' }} </div>
             </div>
         </div>
     </div>

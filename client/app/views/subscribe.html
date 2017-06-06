@@ -1,45 +1,42 @@
 <div class="container">
+    <div class="progress" ng-show="subscribeModel.loading">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" ng-class="subscribeModel.loading ? 'active' : ''">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div>
     <form class="form-horizontal">
         <h1>认购申报</h1>
         <hr>
         <div class="form-group">
-            <label for="paytype" class="col-sm-3 control-label">付币种类</label>
+            <label for="subscribe_banktype" class="col-sm-3 control-label">付币种类</label>
             <div class="col-sm-6">
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-primary active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked>比特币
+                        <input type="radio" name="options" id="option1" ng-model="subscribeModel.form.bankType" ng-value="'BTC'">比特币</input>
                     </label>
                     <label class="btn btn-primary">
-                        <input type="radio" name="options" id="option2" autocomplete="off">以太币
+                        <input type="radio" name="options" id="option2" ng-model="subscribeModel.form.bankType" ng-value="'ETH'">以太币</input>
                     </label>
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">付币地址</label>
+            <label for="subscribe_bankaccount" class="col-sm-3 control-label">付币地址</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="信息填写后不可修改">
+                <input type="text" class="form-control" id="subscribe_bankaccount" placeholder="信息填写后不可修改" ng-model="subscribeModel.form.bankAccount">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">付币数量</label>
+            <label for="subscribe_bankamount" class="col-sm-3 control-label">付币数量</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="信息填写后不可修改">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">接收优币地址</label>
-            <div class="col-sm-6">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="信息填写后不可修改">
-            </div>
-            <div class="col-sm-offset-3 col-sm-10">
-                <label>（可暂不填写，具体信息见公告）</label>
+                <input type="number" class="form-control" id="subscribe_bankamount" placeholder="信息填写后不可修改" ng-model="subscribeModel.form.bankAmount">
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-2">
-                <button type="submit" class="btn btn-default btn-block">确认</button>
+                <button type="submit" class="btn btn-default btn-block" ng-disabled="!subscribeInfoIsValid()" ng-click="confirmSubscribe()">确认</button>
             </div>
         </div>
     </form>
+    {{subscribeModel | json }}
 </div>

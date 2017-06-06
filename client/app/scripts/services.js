@@ -28,9 +28,10 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
                 }
             }).then(function (response) {
                 var expiredAt = new Date();
-                expiredAt.setSeconds(expiredAt.getSeconds() + response.expires_in);
+                var token = response.data;
+                expiredAt.setSeconds(expiredAt.getSeconds() + token.expires_in);
                 response.expires_at = expiredAt.getTime();
-                ULStorageService.set('token', response);
+                ULStorageService.set('token', token);
                 deferred.resolve(response);
                 HttpBuffer.retryAll();
             }).catch(function (error) {
