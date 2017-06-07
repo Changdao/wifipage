@@ -19,7 +19,7 @@
                 <input type="phone" class="form-control" id="register_code" placeholder="验证码" ng-model="registerModel.phoneCode">
             </div>
             <div class="col-sm-2 col-xs-4">
-                <button type="button" class="btn btn-primary btn-block" ng-disabled="!couldSendSMS()" ng-click="sendSMS()">发送</button>
+                <button type="button" class="ico-btn btn-primary btn-block" ng-disabled="!couldSendSMS()" ng-click="sendSMS()">发送</button>
             </div>
         </div>
         <div class="form-group">
@@ -99,8 +99,8 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary col-sm-2 col-xs-5" ng-disabled="!validateForm()" ng-click="registerAccount()" >注册</button>
-                <a ui-sref="app.login" class="btn btn-default col-sm-2 col-xs-offset-2 col-xs-5">直接登录</a>
+                <button type="submit" class="ico-btn btn-primary col-sm-2 col-xs-5" ng-disabled="!validateForm()" ng-click="registerAccount()" >注册</button>
+                <a ui-sref="app.login" class="ico-btn btn-default col-sm-2 col-xs-offset-2 col-xs-5">直接登录</a>
             </div>
         </div>
     </form>
