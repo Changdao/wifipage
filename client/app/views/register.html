@@ -1,4 +1,9 @@
 <div class="container">
+    <div class="progress" ng-show="registerModel.loading">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" ng-class="registerModel.loading ? 'active' : ''">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div>
     <form class="form-horizontal">
         <h1>会员注册</h1>
         <hr>
@@ -14,7 +19,7 @@
                 <input type="phone" class="form-control" id="register_code" placeholder="验证码" ng-model="registerModel.phoneCode">
             </div>
             <div class="col-sm-2 col-xs-4">
-                <button type="button" class="btn btn-primary btn-block">发送</button>
+                <button type="button" class="btn btn-primary btn-block" ng-disabled="!couldSendSMS()" ng-click="sendSMS()">发送</button>
             </div>
         </div>
         <div class="form-group">
@@ -35,7 +40,7 @@
         <div class="col-sm-offset-3 col-sm-10">
             <div class="checkbox">
                 <label>
-                    <input type="checkbox">我已阅读并同意《优币用户协议》
+                    <input type="checkbox" ng-model="registerModel.agreeliscense">我已阅读并同意《优币用户协议》
                 </label>
             </div>
         </div>
@@ -87,7 +92,7 @@
             <div class="col-sm-offset-3 col-sm-6">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> 我承诺所提供资料为我本人所有，不存在盗用别人资料的情况。
+                        <input type="checkbox" ng-model="registerModel.isIntegrity"> 我承诺所提供资料为我本人所有，不存在盗用别人资料的情况。
                     </label>
                 </div>
             </div>

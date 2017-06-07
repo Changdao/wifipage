@@ -13,7 +13,11 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
         accountResource : $resource(generateUrl("/wifiauth/signup"), {}, {
             signupAccount: {method:"POST", isArray:false}
         }),
-        subscribeResource: $resource(generateUrl("/wifiauth/authed/subscribe"), {}, {
+        subscribeResource: $resource(generateUrl("/wifiauth/authed/subscribe/:subscribeId"), {}, {
+        }),
+        phoneResource: $resource(generateUrl("/wifiauth/phone/code/:action"), {}, {
+            preparePhoneCode:{method:"POST", params: { action:"prepare"} },
+            sendPhoneCode:{method:"POST", params:{ action:"send"} }
         }),
         refreshToken: function(){
             var token = ULStorageService.getToken();
@@ -61,6 +65,13 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
                 deferred.reject(error);
             });
             return promise;
+        },
+        guid : function guid(){
+            /** it just version 4 guid **/
+            function s4(){
+                return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+            };
+            return [s4(), s4(), '-', s4(), '-', s4(), '-', s4(), s4(), s4()].join();
         }
     };
 }]).factory('AuthTokenInterceptor',["ULStorageService", "$q","HttpBuffer", "$rootScope", function(ULStorageService, $q, HttpBuffer, $rootScope){

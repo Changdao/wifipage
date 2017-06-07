@@ -65,6 +65,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.subscribemodify', {
+            url: 'subscribemodify/:subscribeId',
+            views: {
+                'content@': {
+                    templateUrl: 'views/subscribe.html',
+                    controller: 'SubscribeModifyController'
+                }
+            }
+        })
     ;
     $urlRouterProvider.otherwise('/subscribelist');
 }).config(['$httpProvider', function($httpProvider){
