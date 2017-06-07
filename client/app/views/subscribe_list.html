@@ -7,13 +7,15 @@
     <div class="panel panel-default">
         <div class="panel-heading">用户认购记录</div>
         <div class="panel-body">
-            <div class="row" ng-repeat="subscribedItem in subscribedModel.subscribedItemList" >
-                <div>{{subscribedItem.bankType }} </div>
-                <div>{{subscribedItem.subscribeAmount }} </div>
-                <div>{{subscribedItem.bankAccount }} </div>
-                <div>{{subscribedItem.created_at | date:'yyyy-MM-dd:hh:mm sss' }} </div>
-                <div>{{subscribedItem.status || 'waiting' }} </div>
-            </div>
+            <table class="table table-bordered">
+                <tr ng-repeat="subscribedItem in subscribedModel.subscribedItemList" >
+                    <td>{{subscribedItem.bankType }} </td>
+                    <td>{{subscribedItem.subscribeAmount }} </td>
+                    <td>{{subscribedItem.bankAccount }} </td>
+                    <td>{{subscribedItem.created_at | date:'yyyy-MM-dd:hh:mm sss' }} </td>
+                    <td>{{subscribedItem.status || 'waiting' }} </td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>

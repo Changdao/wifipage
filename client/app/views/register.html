@@ -64,7 +64,7 @@
         <div class="form-group">
             <label for="register_front" class="col-sm-3 control-label">身份证正面</label>
             <div class="col-sm-6">
-                <img id="register_front" ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files, registerModel.front)" >
+                <img class="ico-card" id="register_front" ng-src="{{registerModel.front.path ? '/wifiauth/'+registerModel.front.path : '/assets/images/upload_image.png' }}" ngf-select="upload($files, registerModel.front)" >
             </div>
             <div class="col-sm-offset-3 col-sm-10">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
@@ -73,7 +73,7 @@
         <div class="form-group">
             <label for="register_back" class="col-sm-3 control-label">身份证反面</label>
             <div class="col-sm-6">
-                <img id="register_back" ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files, registerModel.back)" >
+                <img class="ico-card"  id="register_back" ng-src="{{registerModel.back.path ? '/wifiauth/'+registerModel.back.path : '/assets/images/upload_image.png' }}" ngf-select="upload($files, registerModel.back)" >
             </div>
             <div class="col-sm-offset-3 col-sm-6">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
@@ -82,7 +82,7 @@
         <div class="form-group">
             <label for="register_hand" class="col-sm-3 control-label">手持身份证照片</label>
             <div class="col-sm-6">
-                <img id="register_hand" ngf-thumbnail="file || '/assets/images/upload_image.png'" ngf-select="upload($files, registerModel.hand)" >
+                <img class="ico-card" id="register_hand" ng-src="{{registerModel.hand.path ? '/wifiauth/'+registerModel.hand.path : '/assets/images/upload_image.png' }}" ngf-select="upload($files, registerModel.hand)" >
             </div>
             <div class="col-sm-offset-3 col-sm-6">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
@@ -105,6 +105,5 @@
         </div>
     </form>
     <div>
-        {{registerModel | json}}
     </div>
 </div>

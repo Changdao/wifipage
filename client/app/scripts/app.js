@@ -79,7 +79,7 @@ var app = angular.module('ico', [
 }).config(['$httpProvider', function($httpProvider){
     $httpProvider.interceptors.push("AuthTokenInterceptor");
 }]);
-app.run(['$rootScope', 'HttpBuffer', '$state','MainRemoteResource', function($rootScope, HttpBuffer, $state, MainRemoteResource){
+app.run(['$rootScope', 'HttpBuffer', '$state','MainRemoteResource', 'ULStorageService', function($rootScope, HttpBuffer, $state, MainRemoteResource, ULStorageService){
     $rootScope.$on('event:auth-refreshToken', function refreshToken(){
         MainRemoteResource.refreshToken();
     });
@@ -87,6 +87,22 @@ app.run(['$rootScope', 'HttpBuffer', '$state','MainRemoteResource', function($ro
         HttpBuffer.rejectAll();
         $state.go("app.login");
     });
+    $rootScope.icoEnv = {
+        couldLogin:true,
+        couldLogout:false,
+        couldList:false,
+        couldSubscribe:false
+    };
+    $rootScope.logout = function logout(){
+        $rootScope.icoEnv = {
+            couldLogin:true,
+            couldLogout:false,
+            couldList:false,
+            couldSubscribe:false
+        };
+        ULStorageService.remove("token");
+        $state.go("app.login");
+    };
 }]);
 // app.run(['', function(){
 

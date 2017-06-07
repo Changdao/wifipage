@@ -11,10 +11,10 @@
             <label for="subscribe_banktype" class="col-sm-3 control-label">付币种类</label>
             <div class="col-sm-6">
                 <div class="btn-group" >
-                    <label class="btn btn-primary active">
+                    <label class="ico-btn btn-primary active">
                         <input type="radio" name="banktype_btc"  autocomplete="off" checked id="banktype_btc" ng-model="subscribeModel.form.bankType" ng-value="subscribeModel.data.btc">比特币</input>
                     </label>
-                    <label class="btn btn-primary">
+                    <label class="ico-btn btn-primary">
                         <input type="radio" name="banktype_eth"  autocomplete="off" id="banktype_eth" ng-model="subscribeModel.form.bankType" ng-value="subscribeModel.data.eth">以太币</input>
                     </label>
                 </div>
@@ -34,9 +34,8 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-2">
-                <button type="submit" class="btn btn-default btn-block" ng-disabled="!subscribeInfoIsValid()" ng-click="confirmSubscribe()">确认</button>
+                <button type="submit" class="ico-btn btn-default btn-block" ng-disabled="!subscribeInfoIsValid()" ng-click="confirmSubscribe()">确认</button>
             </div>
         </div>
     </form>
-    {{subscribeModel | json }}
 </div>

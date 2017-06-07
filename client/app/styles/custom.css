@@ -100,3 +100,8 @@ table.favorite-list tbody tr td {
     box-shadow: none;
     opacity: .65;
 }
+
+.ico-card {
+    max-width: 320px;
+    max-height: 180px;
+}

@@ -27,8 +27,14 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             $scope.signinModel.loading--;
         });
     };
+    $rootScope.icoEnv = {
+        couldLogin:true,
+        couldLogout:false,
+        couldList:false,
+        couldSubscribe:false
+    };
     
-}]).controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", "$rootScope", function($scope, Upload, baseURL, MainRemoteResource, $rootScope) {
+}]).controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", "$rootScope", "$state", function($scope, Upload, baseURL, MainRemoteResource, $rootScope, $state) {
     $scope.registerModel = {
         loading:0,
         sendingSMS:0,
@@ -37,6 +43,12 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         hand:{},
         agreeliscense: true,
         isIntegrity: true
+    };
+    $rootScope.icoEnv = {
+        couldLogin:true,
+        couldLogout:false,
+        couldList:false,
+        couldSubscribe:false
     };
     $scope.display = {};
     $scope.upload = function(file, receiverObject) {
@@ -96,6 +108,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             .then(function(success){
                 console.log(success);
                 $scope.registerModel.loading--;
+                $state.go("app.login");
             }, function(error){
                 console.log(error);
                 $scope.registerModel.loading--;
@@ -120,7 +133,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     $scope.prepareSignUp();
     
-}]).controller("SubscribeController", ["$scope", "MainRemoteResource", "$state", function($scope, MainRemoteResource, $state) {
+}]).controller("SubscribeController", ["$scope", "MainRemoteResource", "$state", "$rootScope", function($scope, MainRemoteResource, $state, $rootScope) {
     $scope.subscribeModel = {
         loading:0,
         form:{
@@ -130,6 +143,12 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             btc:'BTC',
             eth:'ETH'
         }
+    };
+    $rootScope.icoEnv = {
+        couldLogin:false,
+        couldLogout:true,
+        couldList:true,
+        couldSubscribe:false
     };
     var modelForm = $scope.subscribeModel.form;
     $scope.subscribeInfoIsValid = function subscribeInfoIsValid(){
@@ -183,13 +202,19 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             $scope.subscribeModel.loading --;
         });
     };
-}]).controller("SubscribeListController", ["$scope","MainRemoteResource", function($scope, MainRemoteResource) {
+}]).controller("SubscribeListController", ["$scope","MainRemoteResource","$rootScope", function($scope, MainRemoteResource, $rootScope) {
     $scope.subscribedModel = {
         subscribedItemList:[],
         action:{},
         display:{
             loading:0
         }
+    };
+    $rootScope.icoEnv = {
+        couldLogin:false,
+        couldLogout:true,
+        couldList:false,
+        couldSubscribe:true
     };
     var model = $scope.subscribedModel;
     model.action.loadSubscribedItemList = function loadSubscribedItemList(){
