@@ -5,8 +5,8 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
 }]).controller("LoginController", ["$scope", "$rootScope", "MainRemoteResource", "$state", function($scope, $rootScope, MainRemoteResource, $state){
     $scope.signinModel = {
         loading: 0,
-        account: '13718961866',
-        password: '123456'
+        account: '',
+        password: ''
     };
     $scope.validSignInInfo = function validSignInInfo(){
         let infoIsValid = $scope.signinModel.account && $scope.signinModel.password;
