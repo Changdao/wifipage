@@ -1,0 +1,23 @@
+{
+    "name": "wifipage",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "http-server -a localhost -p 8079 -c-1 ./client/app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Changdao/wifipage.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Changdao/wifipage/issues"
+    },
+    "homepage": "https://github.com/Changdao/wifipage#readme",
+    "dependencies": {
+        "http-server": "^0.10.0"
+    }
+}
