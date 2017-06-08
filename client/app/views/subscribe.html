@@ -38,4 +38,20 @@
             </div>
         </div>
     </form>
+    <div class="panel panel-default" ng-if="false" >
+        <div class="panel-heading">
+            {{ subscribeModel.form.bankType }} 充值
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">请充值 {{ subscribeModel.form.bankType }} 到以下地址 </li>
+            <li class="list-group-item"><input type="text" ng-value="getBankAccount()" id="bankAccountInput" style="min-width:400px;" /> </li>
+            <li class="list-group-item" ng-click="copyAddress()">复制地址</li>  
+            <li class="list-group-item" ng-click="subscribeModel.data.showQrCode = !subscribeModel.data.showQrCode" >显示二维码  <qrcode ng-if="subscribeModel.data.showQrCode" data="{{ getBankAccount() }}" size="200"> </qrcode>
+</li>  
+            <li class="list-group-item"><a target="blank" ng-href="{{getBankCheckLink()}}">查看区块链浏览器 </a></li>  
+        </ul>
+        <div class="panel-footer">
+            {{ subscribeModel.form.bankType }} 充值到账至少需要 {{getMinBlockConfirm()}} 个区块确认（大约 {{ getMinTimeDelay()}})
+        </div>
+    </div>
 </div>

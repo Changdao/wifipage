@@ -7,6 +7,7 @@ var app = angular.module('ico', [
     'multipleSelect',
     'ngFileUpload',
     'textAngular',
+    "monospaced.qrcode",
     "LocalStorageModule"
 ]).config(function($stateProvider, $urlRouterProvider ) {
     $stateProvider
@@ -53,6 +54,14 @@ var app = angular.module('ico', [
                 'content@': {
                     templateUrl: 'views/register.html',
                     controller: 'RegisterController'
+                }
+            }
+        })
+        .state('app.register.accountprototype', {
+            url: 'register/accountprototype',
+            views: {
+                'content@': {
+                    templateUrl: 'views/account_prototype.html'
                 }
             }
         })
