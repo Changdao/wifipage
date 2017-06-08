@@ -9,7 +9,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         password: ''
     };
     $scope.validSignInInfo = function validSignInInfo(){
-        let infoIsValid = $scope.signinModel.account && $scope.signinModel.password;
+        var infoIsValid = $scope.signinModel.account && $scope.signinModel.password;
         infoIsValid = infoIsValid && !$scope.signinModel.loading;
         return infoIsValid;
     };
