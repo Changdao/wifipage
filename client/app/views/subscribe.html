@@ -38,6 +38,7 @@
             </div>
         </div>
     </form>
+    <div class="alert alert-info" role="alert" ng-show="subscribeModel.data.error.code && !subscribeModel.loading">{{subscribeModel.data.error.message}}</div>
     <div class="panel panel-default" ng-if="false" >
         <div class="panel-heading">
             {{ subscribeModel.form.bankType }} 充值

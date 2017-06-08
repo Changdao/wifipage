@@ -260,8 +260,10 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         MainRemoteResource.subscribeResource.save({},itemInfo).$promise.then(function(sucess){
             $state.go("app.subscribelist");
             $scope.subscribeModel.loading --;
+            $scope.subscribeModel.data.error = undefined;
         }).catch(function(error){
             $scope.subscribeModel.loading --;
+            $scope.subscribeModel.data.error = error.data;
         });
     };
 }]).controller("SubscribeModifyController", ["$scope", "MainRemoteResource", "$state", "$stateParams", function($scope, MainRemoteResource, $state, $stateParams) {
