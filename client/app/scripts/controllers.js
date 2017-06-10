@@ -81,7 +81,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     $scope.couldSendSMS = function couldSendSMS(){
         var couldSendSMS = !$scope.registerModel.sendingSMS && $scope.registerModel.prepare;
-        couldSendSMS = couldSendSMS && $scope.registerModel.phone && $scope.registerModel.phone.length == 11;
+        var validphone = $scope.registerModel.phone && $scope.registerModel.phone.trim();
+        validphone = validphone && validphone.length == 11;
+        couldSendSMS = couldSendSMS && validphone;
         return couldSendSMS;
     };
     $scope.sendSMS = function sendSMS(){

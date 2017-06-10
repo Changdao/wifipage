@@ -14,15 +14,6 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="register_code" class="col-sm-3 col-xs-12 control-label">验证码</label>
-            <div class="col-sm-4 col-xs-8">
-                <input type="phone" class="form-control" id="register_code" placeholder="验证码" ng-model="registerModel.phoneCode">
-            </div>
-            <div class="col-sm-2 col-xs-4">
-                <button type="button" class="ico-btn btn-primary btn-block" ng-disabled="!couldSendSMS()" ng-click="sendSMS()">发送</button>
-            </div>
-        </div>
-        <div class="form-group">
             <label for="register_password" class="col-sm-3 control-label">密码</label>
             <div class="col-sm-6">
                 <input type="password" class="form-control" id="register_password" placeholder="密码" ng-model="registerModel.password">
@@ -87,6 +78,15 @@
             </div>
             <div class="col-sm-offset-3 col-sm-6">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="register_code" class="col-sm-3 col-xs-12 control-label">验证码</label>
+            <div class="col-sm-4 col-xs-8">
+                <input type="phone" class="form-control" id="register_code" placeholder="验证码" ng-model="registerModel.phoneCode">
+            </div>
+            <div class="col-sm-2 col-xs-4">
+                <button type="button" class="ico-btn btn-primary btn-block" ng-disabled="!couldSendSMS()" ng-click="sendSMS()">发送</button>
             </div>
         </div>
         <div class="form-group">
