@@ -19,6 +19,7 @@
                 <input type="password" class="form-control" id="sigin_password" placeholder="密码" ng-model="signinModel.password">
             </div>
         </div>
+        <div class="alert alert-info" role="alert" ng-show="display.error.code && !signModel.loading">{{display.error.message}}</div>
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-10">
                 <button type="submit" class="ico-btn btn-primary" ng-click="signin()" ng-disabled="!validSignInInfo()">登录</button>

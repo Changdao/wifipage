@@ -8,6 +8,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         account: '',
         password: ''
     };
+    $scope.display = {};
     $scope.validSignInInfo = function validSignInInfo(){
         var infoIsValid = $scope.signinModel.account && $scope.signinModel.password;
         infoIsValid = infoIsValid && !$scope.signinModel.loading;
@@ -22,9 +23,13 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         MainRemoteResource.getToken(credentials).then(function(success){
             $state.go('app.subscribelist');
             $scope.signinModel.loading--;
+            $scope.display.error = undefined;
         }).catch(function(error){
             console.log(error);
             $scope.signinModel.loading--;
+            if(error && error.data && error.data.code){
+                $scope.display.error = error.data;
+            };
         });
     };
     $rootScope.icoEnv = {
@@ -109,11 +114,15 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         MainRemoteResource.accountResource.signupAccount({}, uploadData).$promise
             .then(function(success){
                 console.log(success);
+                $scope.display.error = undefined;
                 $scope.registerModel.loading--;
                 $state.go("app.login");
             }, function(error){
                 console.log(error);
                 $scope.registerModel.loading--;
+                if(error && error.data && error.data.code){
+                    $scope.display.error = error.data;
+                }
             });
     };
     $scope.prepareSignUp = function prepareSignUp(){

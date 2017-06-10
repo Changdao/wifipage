@@ -98,6 +98,7 @@
                 </div>
             </div>
         </div>
+        <div class="alert alert-info" role="alert" ng-show="display.error.code && !registerModel.loading">{{display.error.message}}</div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="ico-btn btn-primary col-sm-2 col-xs-5" ng-disabled="!validateForm()" ng-click="registerAccount()" >注册</button>
