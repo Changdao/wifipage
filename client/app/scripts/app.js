@@ -7,6 +7,7 @@ var app = angular.module('ico', [
     'multipleSelect',
     'ngFileUpload',
     'textAngular',
+    'angular-md5',
     "monospaced.qrcode",
     "LocalStorageModule"
 ]).config(function($stateProvider, $urlRouterProvider ) {

@@ -2,7 +2,7 @@
 
 angular.module("ico").controller('HeaderController', ['$scope', function($scope) {
 }]).controller("ContentController", ["$scope", function($scope) {
-}]).controller("LoginController", ["$scope", "$rootScope", "MainRemoteResource", "$state", function($scope, $rootScope, MainRemoteResource, $state){
+}]).controller("LoginController", ["$scope", "$rootScope", "MainRemoteResource", "$state","md5", function($scope, $rootScope, MainRemoteResource, $state, md5){
     $scope.signinModel = {
         loading: 0,
         account: '',
@@ -17,7 +17,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.signin = function signin(){
         var credentials = {
             username: $scope.signinModel.account,
-            password: $scope.signinModel.password
+            password: md5.createHash($scope.signinModel.password)
         };
         $scope.signinModel.loading++;
         MainRemoteResource.getToken(credentials).then(function(success){
@@ -39,7 +39,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         couldSubscribe:false
     };
     
-}]).controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", "$rootScope", "$state", function($scope, Upload, baseURL, MainRemoteResource, $rootScope, $state) {
+}]).controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", "$rootScope", "$state", "md5", function($scope, Upload, baseURL, MainRemoteResource, $rootScope, $state, md5) {
     $scope.registerModel = {
         loading:0,
         sendingSMS:0,
@@ -110,6 +110,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         if(!(uploadData.account)){
             uploadData.account = uploadData.phone;
         };
+        uploadData.password = md5.createHash(uploadData.password);
         $scope.registerModel.loading++;
         MainRemoteResource.accountResource.signupAccount({}, uploadData).$promise
             .then(function(success){
