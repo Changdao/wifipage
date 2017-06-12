@@ -169,9 +169,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.getMinBlockConfirm = function getMinBlockConfirm(){
         switch($scope.subscribeModel.form.bankType){
         case "BTC":
-            return 12;
-        case "ETH":
             return 3000;
+        case "ETH":
+            return 12;
         };
         return undefined;
     };
@@ -187,9 +187,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.getMinTimeDelay = function getMinTimeDelay(){
         switch($scope.subscribeModel.form.bankType){
         case "BTC":
-            return "1-3分钟";
-        case "ETH":
             return "2-3 天";
+        case "ETH":
+            return "1-3分钟";
         };
         return undefined;
     };
