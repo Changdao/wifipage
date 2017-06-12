@@ -3,14 +3,33 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="dropdown" style="display:flex;align-items:flex-end; flex-direction:column; width:100%;margin-top:5px;">
-            <button type="button" role="button" data-toggle="dropdown" style="padding:8px;"> 我的认购 <span class="caret"></span></button>
-            <ul class="dropdown-menu" style="left:auto">
-                <li ng-if="icoEnv.couldLogin"><a ui-sref="app.login">登录</a></li>
-                <li ng-if="icoEnv.couldLogout"><a ng-click="logout()">注销</a></li>
-                <li ng-if="icoEnv.couldList"><a ui-sref="app.subscribelist">申报记录</a></li>
-                <li ng-if="icoEnv.couldSubscribe"><a ui-sref="app.subscribe">认购申报</a></li>
-            </ul>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">&nbsp;&nbsp;</a>
         </div>
-    </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/wifidocs/优WiFi白皮书.pdf">优WiFi白皮书.pdf</a></li>
+                <li><a href="/wifidocs/认购须知.pdf">优币认购须知.pdf</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的申报 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ng-if="icoEnv.couldLogin"><a ui-sref="app.login">登录</a></li>
+                        <li ng-if="icoEnv.couldLogout"><a ng-click="logout()">注销</a></li>
+                        <li ng-if="icoEnv.couldList"><a ui-sref="app.subscribelist">申报记录</a></li>
+                        <li ng-if="icoEnv.couldSubscribe"><a ui-sref="app.subscribe">认购申报</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
