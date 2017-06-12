@@ -153,8 +153,8 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         data:{
             btc:'BTC',
             eth:'ETH',
-            bankBTC: "04adb4e2f055c978c9bb101ee1bc5cd4",
-            bankETH: "3c1d4baa14ad36f3e5bfb6598caa3995"
+            bankBTC: "1Ch9BL6SRn6Z7YqTuBSSaEXBjqq5VdpPSL",
+            bankETH: "0xECC472Db4A32Fd84F3BbAa261bF4598B66fC6cf2"
         }
     };
     $scope.getBankAccount = function getBankAccount(){
