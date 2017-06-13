@@ -170,9 +170,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.getMinBlockConfirm = function getMinBlockConfirm(){
         switch($scope.subscribeModel.form.bankType){
         case "BTC":
-            return 3000;
+            return '充值到账可能需要 120';
         case "ETH":
-            return 12;
+            return '充值到账至少需要 12';
         };
         return undefined;
     };
@@ -188,7 +188,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.getMinTimeDelay = function getMinTimeDelay(){
         switch($scope.subscribeModel.form.bankType){
         case "BTC":
-            return "2-3 天";
+            return "1-3 小时";
         case "ETH":
             return "1-3分钟";
         };
@@ -206,8 +206,6 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         if (isInput) {
             // can just use the original source element for the selection and copy
             target = elem;
-            origSelectionStart = elem.selectionStart;
-            origSelectionEnd = elem.selectionEnd;
         } else {
             // must use a temporary form element for the selection and copy
             target = document.getElementById(targetId);
@@ -237,6 +235,8 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         if (currentFocus && typeof currentFocus.focus === "function") {
             currentFocus.focus();
         }
+        origSelectionStart = target.selectionStart;
+        origSelectionEnd = target.selectionEnd;
         
         if (isInput) {
             // restore prior selection

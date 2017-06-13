@@ -51,14 +51,14 @@
         </div>
         <ul class="row list-group">
             <li class="list-group-item">请充值 {{ subscribeModel.form.bankType }} 到以下地址 </li>
-            <li class="list-group-item"><input type="text" ng-value="getBankAccount()" id="bankAccountInput" style="min-width:400px;" /> </li>
+            <li class="list-group-item"><span id="bankAccountInput" >{{getBankAccount()}}</span></li>
             <li class="list-group-item" ng-click="copyAddress()">复制地址</li>  
             <li class="list-group-item" ng-click="subscribeModel.data.showQrCode = !subscribeModel.data.showQrCode" >显示二维码  <div style="padding:8px; border:2px solid black; display:inline-block;" ng-if="subscribeModel.data.showQrCode" > <qrcode data="{{ getBankAccount() }}" size="200"> </qrcode> </div>
 </li>  
             <li class="list-group-item"><a target="blank" ng-href="{{getBankCheckLink()}}">查看区块链浏览器 </a></li>  
         </ul>
         <div class="row panel-footer">
-            {{ subscribeModel.form.bankType }} 充值到账至少需要 {{getMinBlockConfirm()}} 个区块确认（大约 {{ getMinTimeDelay()}})
+            {{ subscribeModel.form.bankType }} {{getMinBlockConfirm()}} 个区块确认（大约 {{ getMinTimeDelay()}}), 认购确认需要（1-3天)
         </div>
     </div>
 </div>

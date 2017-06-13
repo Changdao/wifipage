@@ -8,13 +8,24 @@
         <div class="panel-heading">用户认购记录</div>
         <div class="panel-body">
             <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>货币种类</td>
+                        <td>数量</td>
+                        <td>付币地址</td>
+                        <td>GTM时间</td>
+                        <td>认购状态</td>
+                    </tr>
+                </thead>
+                <tbody>
                 <tr ng-repeat="subscribedItem in subscribedModel.subscribedItemList" >
                     <td>{{subscribedItem.bankType }} </td>
                     <td>{{subscribedItem.subscribeAmount }} </td>
                     <td>{{subscribedItem.bankAccount }} </td>
-                    <td>{{subscribedItem.created_at | date:'yyyy-MM-dd:hh:mm sss' }} </td>
+                    <td>{{subscribedItem.updated_at | date:'yyyy-MM-dd hh:mm:ss sss' }} </td>
                     <td>{{subscribedItem.status || 'waiting' }} </td>
                 </tr>
+                </tbody>
             </table>
         </div>
     </div>
