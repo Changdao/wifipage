@@ -84,6 +84,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.showpdf', {
+            url: 'showpdf/:pdfname',
+            views: {
+                'content@': {
+                    templateUrl: 'views/show_pdf.html',
+                    controller: 'ShowPdfController'
+                }
+            }
+        })
     ;
     $urlRouterProvider.otherwise('/subscribelist');
 }).config(['$httpProvider', function($httpProvider){

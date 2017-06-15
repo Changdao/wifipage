@@ -337,5 +337,10 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     
     model.action.loadSubscribedItemList();
     
+}]).controller("ShowPdfController", ["$scope","$stateParams", function($scope, $stateParams){
+    var filename = $stateParams["pdfname"];
+    $scope.showModel = {
+        filepath:"/wifidocs/"+ filename+".pdf"
+    };
 }])
 ;
