@@ -1,12 +1,10 @@
 'use strict';
 var AuthorityBroadcast = 'authorityUpdated';
 var app = angular.module('ico', [
-    'angularUtils.directives.dirPagination',
     'ngResource',
     'ui.router',
     'multipleSelect',
     'ngFileUpload',
-    'textAngular',
     'angular-md5',
     "monospaced.qrcode",
     "LocalStorageModule"
