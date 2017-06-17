@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-heading">用户认购记录</div>
+        <div class="panel-heading">用户认购登记记录</div>
         <div class="panel-body">
             <table class="table table-bordered">
                 <thead>
@@ -18,7 +18,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="subscribedItem in subscribedModel.subscribedItemList" >
+                <tr ng-repeat="subscribedItem in subscribedModel.subscribedItemList | orderBy:'updated_at':true" >
                     <td>{{subscribedItem.bankType }} </td>
                     <td>{{subscribedItem.subscribeAmount }} </td>
                     <td>{{subscribedItem.bankAccount }} </td>
