@@ -39,7 +39,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         couldSubscribe:false
     };
     
-}]).controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", "$rootScope", "$state", "md5", function($scope, Upload, baseURL, MainRemoteResource, $rootScope, $state, md5) {
+}]).controller("RegisterController", ["$scope", 'Upload', 'baseURL',"MainRemoteResource", "$rootScope", "$state", "md5","$interval", function($scope, Upload, baseURL, MainRemoteResource, $rootScope, $state, md5,$interval) {
     $scope.registerModel = {
         loading:0,
         sendingSMS:0,
@@ -100,6 +100,16 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         };
         MainRemoteResource.phoneResource.sendPhoneCode({}, sendData).$promise.then(function(success){
             $scope.display.sms = "短信已经发送";
+            var sendCounting  = 0;
+            var countInterval = $interval(function resetSmsCounting(){
+                sendCounting += 1;
+                if(sendCounting == 120){
+                    $scope.registerModel.sendingSMS = 0;
+                    if(typeof countInterval != 'undefined'){
+                        $interval.cancel(countInterval);
+                    };
+                };
+            },  100, 122);
         }).catch(function(error){
             $scope.registerModel.sendingSMS --;
             $scope.display.sms = "短信已经发送失败";
