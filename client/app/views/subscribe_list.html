@@ -28,5 +28,11 @@
                 </tbody>
             </table>
         </div>
+        <div class="panel-footer" ng-if="subscribedModel.display.showPagination">
+            <ul class="pager">
+                <li class="previous"><a ng-if="subscribedModel.display.showStart" ng-click="subscribedModel.action.pageSubscribeItemList(false)">上一页</a></li>
+                <li class="next"><a ng-if="subscribedModel.display.hasMore" ng-click="subscribedModel.action.pageSubscribeItemList(true)">下一页</a></li>
+            </ul>
+        </div>
     </div>
 </div>

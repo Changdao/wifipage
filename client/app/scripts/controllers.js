@@ -322,7 +322,11 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         subscribedItemList:[],
         action:{},
         display:{
-            loading:0
+            loading:0,
+            showPagination:false,
+            start:0,
+            hasMore:false,
+            showStart: false
         }
     };
     $rootScope.icoEnv = {
@@ -332,20 +336,31 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         couldSubscribe:true
     };
     var model = $scope.subscribedModel;
-    model.action.loadSubscribedItemList = function loadSubscribedItemList(){
+    model.action.loadSubscribedItemList = function loadSubscribedItemList(start, limit){
         model.display.loading ++;
-        MainRemoteResource.subscribeResource.query({}).$promise
+        MainRemoteResource.subscribeResource.get({start:(start || 0),limit:(limit || 3)}).$promise
             .then(function(success){
                 model.subscribedItemList.length = 0;
-                Array.prototype.push.apply(model.subscribedItemList,success);
+                Array.prototype.push.apply(model.subscribedItemList,success.arrayData);
                 model.display.loading --;
+                model.display.showPagination = start || (success.arrayData.length >= (limit||0));
+                model.display.hasMore = success.arrayData.length >= (limit||0);
+                model.display.showStart = !!start;
+                model.display.start = start;
             }, function(error){
                 console.log(error);
                 model.display.loading --;
             });
     };
-    
-    model.action.loadSubscribedItemList();
+    var pagelimit = 50;
+    model.action.loadSubscribedItemList(0, pagelimit);
+    model.action.pageSubscribeItemList = function pageSubscribeItemList(isNext){
+        if(isNext){
+            model.action.loadSubscribedItemList(model.display.start + 1, pagelimit);
+        }else{
+            model.action.loadSubscribedItemList(model.display.start - 1, pagelimit);
+        }
+    };
     
 }]).controller("ShowPdfController", ["$scope","$stateParams", function($scope, $stateParams){
     var filename = $stateParams["pdfname"];
