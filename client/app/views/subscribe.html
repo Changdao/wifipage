@@ -23,13 +23,13 @@
         <div class="form-group">
             <label for="subscribe_bankaccount" class="col-sm-3 control-label">付币地址</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="subscribe_bankaccount" placeholder="信息填写后不可修改" ng-model="subscribeModel.form.bankAccount">
+                <input type="text" class="form-control" id="subscribe_bankaccount" placeholder="信息填写后不可修改，可以重新申报，替换历史申报。" ng-model="subscribeModel.form.bankAccount">
             </div>
         </div>
         <div class="form-group">
             <label for="subscribe_bankamount" class="col-sm-3 control-label">付币数量</label>
             <div class="col-sm-6">
-                <input type="number" class="form-control" id="subscribe_bankamount" placeholder="信息填写后不可修改" ng-model="subscribeModel.form.bankAmount">
+                <input type="number" class="form-control" id="subscribe_bankamount" placeholder="信息填写后不可修改，可以重新申报，替换历史申报" ng-model="subscribeModel.form.bankAmount">
             </div>
         </div>
         <div class="form-group">
@@ -55,10 +55,10 @@
             <li class="list-group-item" ng-click="copyAddress()">复制地址</li>  
             <li class="list-group-item" ng-click="subscribeModel.data.showQrCode = !subscribeModel.data.showQrCode" >显示二维码  <div style="padding:8px; border:2px solid black; display:inline-block;" ng-if="subscribeModel.data.showQrCode" > <qrcode data="{{ getBankAccount() }}" size="200"> </qrcode> </div>
 </li>  
-            <li class="list-group-item"><a target="blank" ng-href="{{getBankCheckLink()}}">查看区块链浏览器 </a></li>  
+            <!-- <li class="list-group-item"><a target="blank" ng-href="{{getBankCheckLink()}}">查看区块链浏览器 </a></li>  -->
         </ul>
-        <div class="row panel-footer">
+        <!--<div class="row panel-footer">
             {{ subscribeModel.form.bankType }} {{getMinBlockConfirm()}} 个区块确认（大约 {{ getMinTimeDelay()}}), 认购确认需要（1-3天)
-        </div>
+        </div>  -->
     </div>
 </div>
