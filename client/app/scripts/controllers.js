@@ -80,7 +80,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         valid = valid && model.phoneCode;
         valid = valid && model.password && model.confirm && model.password == model.confirm;
         valid = valid && model.name && model.identifier && model.identifier.length == 18;
-        valid = valid && model.front.filename && model.back.filename && model.hand.filename;
+        // valid = valid && model.front.filename && model.back.filename && model.hand.filename;
         valid = valid && model.agreeliscense && model.isIntegrity;
         return valid;
     };

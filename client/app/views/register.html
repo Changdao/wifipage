@@ -9,19 +9,19 @@
         <hr>
         <div class="form-group">
             <label for="register_phone" class="col-sm-3 control-label">手机号码</label>
-            <div class="col-sm-6">
-                <input type="phone" class="form-control" id="register_phone" placeholder="手机号码" ng-model="registerModel.phone">
+            <div class="col-sm-9">
+                <input type="phone" class="form-control" id="register_phone" placeholder="为避免纠纷，请务必使用本人实名验证的手机号码。详情见协议。" ng-model="registerModel.phone">
             </div>
         </div>
         <div class="form-group">
             <label for="register_password" class="col-sm-3 control-label">密码</label>
-            <div class="col-sm-6">
+            <div class="col-sm-9">
                 <input type="password" class="form-control" id="register_password" placeholder="密码" ng-model="registerModel.password">
             </div>
         </div>
         <div class="form-group">
             <label for="register_confirm" class="col-sm-3 control-label">确认密码</label>
-            <div class="col-sm-6">
+            <div class="col-sm-9">
                 <input type="password" class="form-control" id="register_confirm" placeholder="确认密码" ng-model="registerModel.confirm">
             </div>
         </div>
@@ -44,15 +44,16 @@
         <div class="form-group">
             <label for="register_name" class="col-sm-3 control-label">姓名</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="register_name" placeholder="" ng-model="registerModel.name">
+                <input type="text" class="form-control" id="register_name" placeholder="为避免纠纷，请务必填写本人有效真实姓名。详情见协议." ng-model="registerModel.name">
             </div>
         </div>
         <div class="form-group">
             <label for="register_identifier" class="col-sm-3 control-label">身份证号</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="register_identifier" placeholder="" ng-model="registerModel.identifier">
+                <input type="text" class="form-control" id="register_identifier" placeholder="为避免纠纷，请务必填写本人有效身份证号。详情见协议。" ng-model="registerModel.identifier">
             </div>
         </div>
+        <div ng-if="false">
         <div class="form-group">
             <label for="register_front" class="col-sm-3 control-label">身份证正面</label>
             <div class="col-sm-6">
@@ -79,6 +80,7 @@
             <div class="col-sm-offset-3 col-sm-6">
                 <label>保证文字清晰可识别图片大小不要超过1MB</label>
             </div>
+        </div>
         </div>
         <div class="form-group">
             <label for="register_code" class="col-sm-3 col-xs-12 control-label">验证码</label>
