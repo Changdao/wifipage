@@ -53,12 +53,36 @@
 <body ng-app="ico" class="home-page" >
     <!-- Add your site or application content here -->
     <div class="top">
-	    <div class="center nav clear">
+	    <div ng-if="false" class="center nav clear">
 		    <a >
 			    <img src="http://www.5uwifi.com/Public/Home/img/logo.png" class="logo">
 		    </a>
 		    <div class="fen"></div>
 	    </div>
+        <div ng-if="true" class="center nav clear">
+		    <a href="http://www.5uwifi.com/index.php/Home/About/index.html">
+			    <img src="http://www.5uwifi.com/Public/Home/img/logo.png" class="logo">
+		    </a>
+		    <div class="fen"></div>
+		    <ul class="top_ur">
+			    <li>
+				    <a href="http://www.5uwifi.com/index.php/Home/Index/index.html">首页</a>
+			    </li>
+				<li>
+				    <a href="http://www.5uwifi.com/index.php/Home/Product/index.html">优wifi产品</a>
+			    </li>
+				<li>
+				    <a href="http://www.5uwifi.com/index.php/Home/Shops/index.html">代理加盟</a>
+			    </li>
+	            <li>
+				    <a href="http://www.5uwifi.com/index.php/Home/About/index2.html">行业案例</a>
+			    </li>
+			    <li>
+				    <a href="http://www.5uwifi.com/index.php/Home/About/index.html" style="color: rgb(255, 255, 255); background-color: rgb(78, 127, 193);" id="top_ura" >客户中心</a>
+		        </li>
+			    <li>
+            </ul>
+        </div>
     </div>
     <div class="wrapper">
         <div ui-view="header"></div>
