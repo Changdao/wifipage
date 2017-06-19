@@ -55,6 +55,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         couldList:false,
         couldSubscribe:false
     };
+    $scope.verify = {};
     $scope.display = {};
     $scope.upload = function(file, receiverObject) {
         var nofile = !file || file.length == 0 || !file[0];
@@ -86,6 +87,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     $scope.couldSendSMS = function couldSendSMS(){
         var couldSendSMS = !$scope.registerModel.sendingSMS && $scope.registerModel.prepare;
+        couldSendSMS = couldSendSMS && $scope.registerModel.verifyCode && $scope.registerModel.verifyCode.length==6;
         var validphone = $scope.registerModel.phone && $scope.registerModel.phone.trim();
         validphone = validphone && validphone.length == 11;
         couldSendSMS = couldSendSMS && validphone;
@@ -94,9 +96,11 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.sendSMS = function sendSMS(){
         $scope.registerModel.sendingSMS ++;
         var sendData = {
+            id: $scope.verify.id,
             uuid: $rootScope.rootUUID,
             application: "register",
-            phone: $scope.registerModel.phone
+            phone: $scope.registerModel.phone,
+            verifyCode: $scope.registerModel.verifyCode
         };
         MainRemoteResource.phoneResource.sendPhoneCode({}, sendData).$promise.then(function(success){
             $scope.display.sms = "短信已经发送";
@@ -110,9 +114,13 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
                     };
                 };
             },  100, 122);
+            $scope.display.error = undefined;
         }).catch(function(error){
             $scope.registerModel.sendingSMS --;
             $scope.display.sms = "短信已经发送失败";
+            if(error && error.data && error.data.code){
+                $scope.display.error = error.data;
+            }
         });
     };
     $scope.registerAccount = function registerAccount(){
@@ -146,9 +154,25 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         MainRemoteResource.phoneResource.preparePhoneCode({}, prepareBody).$promise.then(function(success){
             $scope.registerModel.loading--;
             $scope.registerModel.prepare = success;
+            $scope.verify.id = success.id;
+            $scope.verify.uuid = $rootScope.rootUUID;
+            $scope.prepareVerify();
         }).catch(function(error){
             if(error && error.data && error.data.info && error.data.code == 1201){
                 $scope.registerModel.prepare = error.data.info;
+            }
+            $scope.registerModel.loading--;
+        });
+    };
+    $scope.prepareVerify = function(){
+        $rootScope.rootUUID = $rootScope.rootUUID || MainRemoteResource.guid();
+        $scope.registerModel.loading++;
+        return MainRemoteResource.phoneResource.refreshVerifyCode({},{id:$scope.verify.id, uuid: $rootScope.rootUUID}).$promise.then(function(success){
+            $scope.registerModel.loading--;
+            $scope.verify.timestamp = success.timestamp;
+        }).catch(function(error){
+            if(error && error.data && error.data.code){
+                $scope.display.error = error.data;
             }
             $scope.registerModel.loading--;
         });
