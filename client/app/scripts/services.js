@@ -17,7 +17,8 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
         }),
         phoneResource: $resource(generateUrl("/wifiauth/phone/code/:action"), {}, {
             preparePhoneCode:{method:"POST", params: { action:"prepare"} },
-            sendPhoneCode:{method:"POST", params:{ action:"send"} }
+            sendPhoneCode:{method:"POST", params:{ action:"send"} },
+            refreshVerifyCode:{method:"POST", url:"/wifiauth/code/verify/refresh"}
         }),
         refreshToken: function(){
             var token = ULStorageService.getToken();
