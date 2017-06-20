@@ -100,7 +100,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             uuid: $rootScope.rootUUID,
             application: "register",
             phone: $scope.registerModel.phone,
-            verifyCode: $scope.registerModel.verifyCode
+            verifyCode: $scope.registerModel.verifyCode.tolocalelowercase()
         };
         MainRemoteResource.phoneResource.sendPhoneCode({}, sendData).$promise.then(function(success){
             $scope.display.sms = "短信已经发送";
