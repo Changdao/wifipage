@@ -91,6 +91,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.publicity', {
+            url: 'publicity/:domain',
+            views: {
+                'content@': {
+                    templateUrl: 'views/publicity.html',
+                    controller: 'PublicityController'
+                }
+            }
+        })
     ;
     $urlRouterProvider.otherwise('/subscribelist');
 }).config(['$httpProvider', function($httpProvider){

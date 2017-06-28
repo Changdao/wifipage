@@ -391,5 +391,22 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     $scope.showModel = {
         filepath:"/wifidocs/"+ filename+".pdf"
     };
+}]).controller("PublicityController", ["$scope", "$stateParams", function($scope, $stateParams){
+    var domain = $stateParams["domain"];
+    $scope.isInit = true;
+    $scope.publicityModel = {
+        carousel:[],
+        domain:domain
+    };
+    function changeDomain(domanName){
+        $scope.publicityModel.carousel.length = 0;
+        var newDomain = {
+            carousel:[
+                "UNADJUSTEDNONRAW_thumb_291.jpg", "UNADJUSTEDNONRAW_thumb_2a3.jpg", "UNADJUSTEDNONRAW_thumb_2b5.jpg", "UNADJUSTEDNONRAW_thumb_280.jpg", "UNADJUSTEDNONRAW_thumb_292.jpg", "UNADJUSTEDNONRAW_thumb_2a4.jpg", "UNADJUSTEDNONRAW_thumb_2b6.jpg", "UNADJUSTEDNONRAW_thumb_281.jpg", "UNADJUSTEDNONRAW_thumb_293.jpg", "UNADJUSTEDNONRAW_thumb_2a5.jpg", "UNADJUSTEDNONRAW_thumb_2b7.jpg", "UNADJUSTEDNONRAW_thumb_282.jpg", "UNADJUSTEDNONRAW_thumb_294.jpg", "UNADJUSTEDNONRAW_thumb_2a6.jpg", "UNADJUSTEDNONRAW_thumb_2b8.jpg", "UNADJUSTEDNONRAW_thumb_283.jpg", "UNADJUSTEDNONRAW_thumb_295.jpg", "UNADJUSTEDNONRAW_thumb_2a7.jpg", "UNADJUSTEDNONRAW_thumb_2b9.jpg", "UNADJUSTEDNONRAW_thumb_284.jpg", "UNADJUSTEDNONRAW_thumb_296.jpg", "UNADJUSTEDNONRAW_thumb_2a8.jpg", "UNADJUSTEDNONRAW_thumb_2ba.jpg", "UNADJUSTEDNONRAW_thumb_285.jpg", "UNADJUSTEDNONRAW_thumb_297.jpg", "UNADJUSTEDNONRAW_thumb_2a9.jpg", "UNADJUSTEDNONRAW_thumb_2bb.jpg", "UNADJUSTEDNONRAW_thumb_286.jpg", "UNADJUSTEDNONRAW_thumb_298.jpg", "UNADJUSTEDNONRAW_thumb_2aa.jpg", "UNADJUSTEDNONRAW_thumb_2bc.jpg", "UNADJUSTEDNONRAW_thumb_287.jpg", "UNADJUSTEDNONRAW_thumb_299.jpg", "UNADJUSTEDNONRAW_thumb_2ab.jpg", "UNADJUSTEDNONRAW_thumb_2bd.jpg", "UNADJUSTEDNONRAW_thumb_288.jpg", "UNADJUSTEDNONRAW_thumb_29a.jpg", "UNADJUSTEDNONRAW_thumb_2ac.jpg", "UNADJUSTEDNONRAW_thumb_2be.jpg", "UNADJUSTEDNONRAW_thumb_289.jpg", "UNADJUSTEDNONRAW_thumb_29b.jpg", "UNADJUSTEDNONRAW_thumb_2ad.jpg", "UNADJUSTEDNONRAW_thumb_2bf.jpg", "UNADJUSTEDNONRAW_thumb_28a.jpg", "UNADJUSTEDNONRAW_thumb_29c.jpg", "UNADJUSTEDNONRAW_thumb_2ae.jpg", "UNADJUSTEDNONRAW_thumb_2c0.jpg", "UNADJUSTEDNONRAW_thumb_28b.jpg", "UNADJUSTEDNONRAW_thumb_29d.jpg", "UNADJUSTEDNONRAW_thumb_2af.jpg", "UNADJUSTEDNONRAW_thumb_2c1.jpg", "UNADJUSTEDNONRAW_thumb_28c.jpg", "UNADJUSTEDNONRAW_thumb_29e.jpg", "UNADJUSTEDNONRAW_thumb_2b0.jpg", "UNADJUSTEDNONRAW_thumb_2c2.jpg", "UNADJUSTEDNONRAW_thumb_28d.jpg", "UNADJUSTEDNONRAW_thumb_29f.jpg", "UNADJUSTEDNONRAW_thumb_2b1.jpg", "UNADJUSTEDNONRAW_thumb_2c3.jpg", "UNADJUSTEDNONRAW_thumb_28e.jpg", "UNADJUSTEDNONRAW_thumb_2a0.jpg", "UNADJUSTEDNONRAW_thumb_2b2.jpg", "UNADJUSTEDNONRAW_thumb_2c4.jpg", "UNADJUSTEDNONRAW_thumb_28f.jpg", "UNADJUSTEDNONRAW_thumb_2a1.jpg", "UNADJUSTEDNONRAW_thumb_2b3.jpg", "UNADJUSTEDNONRAW_thumb_2c5.jpg", "UNADJUSTEDNONRAW_thumb_290.jpg", "UNADJUSTEDNONRAW_thumb_2a2.jpg", "UNADJUSTEDNONRAW_thumb_2b4.jpg"
+            ]
+        };
+        $scope.publicityModel.carousel.push.apply($scope.publicityModel.carousel, newDomain.carousel);
+    }
+    changeDomain(domain);
 }])
 ;
