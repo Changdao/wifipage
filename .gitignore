@@ -16,3 +16,5 @@ nohup.out
 /client/app/upload/carousel/*
 client/app/upload/*
 __MACOSX
+.DS_Store
+*~
