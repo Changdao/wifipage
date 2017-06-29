@@ -1,33 +1,26 @@
 <div class="container-fluid">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="{{$index}}" ng-repeat="citem in publicityModel.carousel" ng-class="$index==0 && isInit ? 'active':'' "></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item" ng-repeat="citem in publicityModel.carousel" ng-class="$index==0 && isInit ? 'active':'' ">
-                <img ng-src="/wifipublicity/{{publicityModel.domain}}/images/{{citem}}" alt="..." style="margin-left:auto;margin-right:auto;max-height:80vh;" >
-                <div class="carousel-caption">
-                    <h3>北京见面会</h3>
-                    <p>社区精神</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" role="button" data-target="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" role="button" data-target="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    <div class="list-group">
+        <li class="list-group-item-heading">文档资料</li>
+        <li class="list-group-item" ng-repeat="fitem in publicityModel.files">
+            <h4 class="list-group-item-heading">{{fitem.name}}</h4>
+            <p class="list-group-item-text"><a>{{fitem.desc}}</a></p>
+        </li>
     </div>
-    <div class="jumbotron">
-        <p> <img src="assets/images/qq518310506.jpg" class="img-responsive center-block" style="width:100% \9;">
-        </p>
+    <div class="list-group">
+        <li class="list-group-item-heading">图片资料：北京见面会</li>
+        <li class="list-group-item" ng-repeat="fitem in publicityModel.peking | orderBy:'file'">
+            <h4 class="list-group-item-heading">{{fitem.name}}</h4>
+        </li>
+    </div>
+    <div class="list-group">
+        <li class="list-group-item-heading">直播视频：北京见面会</li>
+        <li class="list-group-item" ng-repeat="fitem in publicityModel.pekingLiveShow | orderBy:'file'">
+            <h4 class="list-group-item-heading">{{fitem.name}}</h4>
+        </li>
+    </div>
+    <div class="list-group">
+        <li class="list-group-item-heading">
+            <img ng-src="assets/images/qq518310506.jpg" class="image-thumbnail center-block"/>
+        </li>
     </div>
 </div>
