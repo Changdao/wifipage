@@ -6,11 +6,16 @@
             <p class="list-group-item-text"><a>{{fitem.desc}}</a></p>
         </li>
     </div>
-    <div class="list-group">
-        <li class="list-group-item-heading">图片资料：北京见面会</li>
-        <li class="list-group-item" ng-repeat="fitem in publicityModel.peking | orderBy:'file'">
-            <h4 class="list-group-item-heading">{{fitem.name}}</h4>
-        </li>
+    <div class="row">
+        <li class="list-group-item-heading">直播视频：北京见面会</li>
+        <div class="col-xs-6 col-md-3" ng-repeat="fitem in publicityModel.peking | orderBy:'file'">
+            <div class="thumbnail" >
+                <!-- <img src="" alt="{{fitem.desc}}"> -->
+                <div class="caption">
+                    <h3>{{fitem.name}}</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="list-group">
         <li class="list-group-item-heading">直播视频：北京见面会</li>
