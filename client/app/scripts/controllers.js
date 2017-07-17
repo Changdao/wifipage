@@ -178,7 +178,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         });
     };
     $scope.prepareSignUp();
-}]).controller("FindLostPasswordController",["$scope","$rootScope","MainRemoteResource", "md5","$state", function($scope,$rootScope,MainRemoteResource, md5, $state){
+}]).controller("FindLostPasswordController",["$scope","$rootScope","MainRemoteResource", "md5","$state","$interval", function($scope,$rootScope,MainRemoteResource, md5, $state, $interval){
     var base = {
         verify:{},
         resetData:{},
