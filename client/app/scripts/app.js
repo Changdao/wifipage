@@ -56,6 +56,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.findpassword', {
+            url: 'findpassword',
+            views: {
+                'content@': {
+                    templateUrl: 'views/findPassword.html',
+                    controller: 'FindLostPasswordController'
+                }
+            }
+        })
         .state('app.register.accountprototype', {
             url: 'register/accountprototype',
             views: {
