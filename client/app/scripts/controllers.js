@@ -178,7 +178,112 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         });
     };
     $scope.prepareSignUp();
-    
+}]).controller("FindLostPasswordController",["$scope","$rootScope","MainRemoteResource", "md5","$state", function($scope,$rootScope,MainRemoteResource, md5, $state){
+    var base = {
+        verify:{},
+        resetData:{},
+        display:{}
+    };
+    $scope.lostModel = {
+        loading:0,
+        sendingSMS:0,
+        database: base
+    };
+    $scope.prepareResetPassword = function(){
+        $rootScope.rootUUID = $rootScope.rootUUID || MainRemoteResource.guid();
+        var prepareBody = {
+            uuid: $rootScope.rootUUID,
+            application: "resetPassword"
+        };
+        $scope.lostModel.loading++;
+        MainRemoteResource.phoneResource.preparePhoneCode({}, prepareBody).$promise.then(function(success){
+            $scope.lostModel.loading--;
+            base.prepare = success;
+            base.verify.id = success.id;
+            base.verify.uuid = $rootScope.rootUUID;
+            $scope.prepareVerify();
+        }).catch(function(error){
+            if(error && error.data && error.data.info && error.data.code == 1201){
+                base.prepare = error.data.info;
+                base.verify.id = error.data.info.id;
+                base.verify.uuid = $rootScope.rootUUID;
+                $scope.prepareVerify();
+            }
+            $scope.lostModel.loading--;
+        });
+    };
+    $scope.prepareVerify = function(){
+        $rootScope.rootUUID = $rootScope.rootUUID || MainRemoteResource.guid();
+        $scope.lostModel.loading++;
+        return MainRemoteResource.phoneResource.refreshVerifyCode({},{id:base.verify.id, uuid: $rootScope.rootUUID}).$promise.then(function(success){
+            $scope.lostModel.loading--;
+            base.verify.timestamp = success.timestamp;
+        }).catch(function(error){
+            if(error && error.data && error.data.code){
+                base.display.error = error.data;
+            }
+            $scope.lostModel.loading--;
+        });
+    };
+    $scope.couldSendSMS = function couldSendSMS(){
+        var couldSendSMS = !base.sendingSMS && base.prepare;
+        couldSendSMS = couldSendSMS && base.resetData.verifyCode && base.resetData.verifyCode.length==6;
+        var validphone = base.resetData.account && base.resetData.account.trim();
+        validphone = validphone && validphone.length == 11;
+        couldSendSMS = couldSendSMS && validphone;
+        return couldSendSMS;
+    };
+    $scope.sendSMS = function sendSMS(){
+        $scope.lostModel.sendingSMS ++;
+        var sendData = {
+            id: base.verify.id,
+            uuid: $rootScope.rootUUID,
+            application: "resetPassword",
+            phone: base.resetData.account,
+            verifyCode: base.resetData.verifyCode.toLocaleLowerCase()
+        };
+        MainRemoteResource.phoneResource.sendPhoneCode({}, sendData).$promise.then(function(success){
+            base.display.sms = "短信已经发送";
+            var sendCounting  = 0;
+            var countInterval = $interval(function resetSmsCounting(){
+                sendCounting += 1;
+                if(sendCounting == 120){
+                    $scope.lostModel.sendingSMS = 0;
+                    if(typeof countInterval != 'undefined'){
+                        $interval.cancel(countInterval);
+                    };
+                };
+            },  100, 122);
+            base.display.error = undefined;
+        }).catch(function(error){
+            $scope.lostModel.sendingSMS --;
+            base.display.sms = "短信已经发送失败";
+            if(error && error.data && error.data.code){
+                base.display.error = error.data;
+            }
+        });
+    };
+    $scope.couldResetPassword = function(){
+        var couldReset = base.resetData.account && base.resetData.verifyCode && base.resetData.phoneCode && base.resetData.password && base.resetData.confirm;
+        couldReset = couldReset && (base.resetData.password == base.resetData.confirm);
+        couldReset = couldReset && (base.resetData.account && base.resetData.account.trim() && base.resetData.account.trim().length == 11);
+        return couldReset;
+    };
+    $scope.resetPassword = function(){
+        var sendData = {
+            account: base.resetData.account,
+            verifyCode: base.resetData.verifyCode,
+            phoneCode: base.resetData.phoneCode,
+            password: md5.createHash(base.resetData.password),
+            confirm: md5.createHash(base.resetData.confirm)
+        };
+        MainRemoteResource.accountResource.resetPassword({}, sendData).$promise.then(function(success){
+            $state.go("app.login");
+            
+        }).catch(function(error){
+        });
+    };
+    $scope.prepareResetPassword();
 }]).controller("SubscribeController", ["$scope", "MainRemoteResource", "$state", "$rootScope", function($scope, MainRemoteResource, $state, $rootScope) {
     $scope.subscribeModel = {
         loading:0,
