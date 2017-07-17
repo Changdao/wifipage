@@ -182,11 +182,11 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     var base = {
         verify:{},
         resetData:{},
-        display:{}
+        display:{},
+        sendingSMS:0
     };
     $scope.lostModel = {
         loading:0,
-        sendingSMS:0,
         database: base
     };
     $scope.prepareResetPassword = function(){
@@ -234,7 +234,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         return couldSendSMS;
     };
     $scope.sendSMS = function sendSMS(){
-        $scope.lostModel.sendingSMS ++;
+        base.sendingSMS ++;
         var sendData = {
             id: base.verify.id,
             uuid: $rootScope.rootUUID,
@@ -248,7 +248,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             var countInterval = $interval(function resetSmsCounting(){
                 sendCounting += 1;
                 if(sendCounting == 120){
-                    $scope.lostModel.sendingSMS = 0;
+                    base.sendingSMS = 0;
                     if(typeof countInterval != 'undefined'){
                         $interval.cancel(countInterval);
                     };
@@ -256,8 +256,8 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             },  100, 122);
             base.display.error = undefined;
         }).catch(function(error){
-            $scope.lostModel.sendingSMS --;
-            base.display.sms = "短信已经发送失败";
+            base.sendingSMS --;
+            base.display.sms = "短信发送失败";
             if(error && error.data && error.data.code){
                 base.display.error = error.data;
             }
