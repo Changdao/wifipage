@@ -15,6 +15,7 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
             resetPassword: {method:"POST", isArray:false, url:generateUrl("/wifiauth/resetpassword")}
         }),
         subscribeResource: $resource(generateUrl("/wifiauth/authed/subscribe/:subscribeId"), {}, {
+            getChecked:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/checked")}
         }),
         phoneResource: $resource(generateUrl("/wifiauth/phone/code/:action"), {}, {
             preparePhoneCode:{method:"POST", params: { action:"prepare"} },

@@ -35,4 +35,25 @@
             </ul>
         </div>
     </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">用户认购核对结果</div>
+        <div class="panel-body" ng-if="!(subscribedModel.checked && subscribedModel.checked.length > 0) ">无法自动核对，请联系管理员qq：3091346340</div>
+        <div class="panel-body" ng-if="subscribedModel.checked && subscribedModel.checked.length> 0 ">
+            <table class="table table-borderd">
+                <tr>
+                    <td>币种</td>
+                    <td>地址</td>
+                    <td>额度</td>
+                </tr>
+                <tr ng-repeat="checkItem in subscribedModel.checked">
+                    <td>{{checkItem.bankType}}</td>
+                    <td>{{checkItem.bankAccount}}</td>
+                    <td>{{checkItem.amountIn - (checkItem.ammountOut || 0 )}}</td>
+                </tr>
+                <tr>
+                    <td colspan="3">如果对核对结果存有疑问，请联系管理员qq：3091346340</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
