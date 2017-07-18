@@ -43,7 +43,7 @@ var app = angular.module('ico', [
             views:{
                 'content@':{
                     templateUrl:'views/subscribe_list.html',
-                    controller: 'SubscribeListController'
+                    controller: 'CheckingListController'
                 }
             }
         })
