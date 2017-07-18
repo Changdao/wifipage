@@ -21,10 +21,15 @@
         </div>
         <div class="alert alert-info" role="alert" ng-show="display.error.code && !signModel.loading">{{display.error.message || display.error.error_description}}</div>
         <div class="form-group">
-            <div class="col-sm-offset-3 col-sm-10">
+            <div class="col-sm-offset-3 col-sm-9">
                 <button type="submit" class="ico-btn btn-primary" ng-click="signin()" ng-disabled="!validSignInInfo()">登录</button>
                 <a ui-sref='app.register' style="display:none" >免费注册</a>
                 <a style="padding-left:16px;" ui-sref="app.findpassword" >忘记了密码，要重置</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                <a href="https://token.im/" target="_blank">imToken下载地址</a>
             </div>
         </div>
     </form>
