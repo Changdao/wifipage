@@ -497,6 +497,58 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     model.action.getChecked();
     
+}]).controller("CheckingListController", ["$scope","MainRemoteResource","$rootScope", "$stateParams", function($scope, MainRemoteResource, $rootScope, $stateParams) {
+    var targePhone = $stateParams["phone"];
+    $scope.subscribedModel = {
+        subscribedItemList:[],
+        action:{},
+        display:{
+            loading:0,
+            showPagination:false,
+            start:0,
+            hasMore:false,
+            showStart: false
+        }
+    };
+    $rootScope.icoEnv = {
+        couldLogin:false,
+        couldLogout:true,
+        couldList:false,
+        couldSubscribe:true
+    };
+    var model = $scope.subscribedModel;
+    model.action.loadSubscribedItemList = function loadSubscribedItemList(start, limit){
+        model.display.loading ++;
+        MainRemoteResource.subscribeResource.testSubscribeList({phone:targePhone,start:(start || 0),limit:(limit || 3)}).$promise
+            .then(function(success){
+                model.subscribedItemList.length = 0;
+                Array.prototype.push.apply(model.subscribedItemList,success.arrayData);
+                model.display.loading --;
+                model.display.showPagination = start || (success.arrayData.length >= (limit||0));
+                model.display.hasMore = success.arrayData.length >= (limit||0);
+                model.display.showStart = !!start;
+                model.display.start = start;
+            }, function(error){
+                console.log(error);
+                model.display.loading --;
+            });
+    };
+    var pagelimit = 50;
+    model.action.loadSubscribedItemList(0, pagelimit);
+    model.action.pageSubscribeItemList = function pageSubscribeItemList(isNext){
+        if(isNext){
+            model.action.loadSubscribedItemList(model.display.start + 1, pagelimit);
+        }else{
+            model.action.loadSubscribedItemList(model.display.start - 1, pagelimit);
+        }
+    };
+    model.action.getChecked = function getChecked(){
+        MainRemoteResource.subscribeResource.testCheckedList({phone:targePhone}).$promise.then(function(success){
+            model.checked = success.checkedArray;
+        });
+    };
+    model.action.getChecked();
+    
 }]).controller("ShowPdfController", ["$scope","$stateParams", function($scope, $stateParams){
     var filename = $stateParams["pdfname"];
     $scope.showModel = {
