@@ -490,6 +490,12 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             model.action.loadSubscribedItemList(model.display.start - 1, pagelimit);
         }
     };
+    model.action.getChecked = function getChecked(){
+        MainRemoteResource.subscribeResource.getChecked({}).$promise.then(function(success){
+            model.checked = success.checkedArray;
+        });
+    };
+    model.action.getChecked();
     
 }]).controller("ShowPdfController", ["$scope","$stateParams", function($scope, $stateParams){
     var filename = $stateParams["pdfname"];
