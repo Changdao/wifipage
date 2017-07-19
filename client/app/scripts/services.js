@@ -16,8 +16,8 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
         }),
         subscribeResource: $resource(generateUrl("/wifiauth/authed/subscribe/:subscribeId"), {}, {
             getChecked:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/checked")},
-            testSubscribeList:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/subscribe/list/:phone")},
-            testCheckedList:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/checked/list/:phone")}
+            testSubscribeList:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/list/subscribe/:phone")},
+            testCheckedList:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/list/checked/:phone")}
         }),
         phoneResource: $resource(generateUrl("/wifiauth/phone/code/:action"), {}, {
             preparePhoneCode:{method:"POST", params: { action:"prepare"} },
