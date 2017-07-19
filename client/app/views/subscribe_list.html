@@ -47,8 +47,8 @@
                 </tr>
                 <tr ng-repeat="checkItem in subscribedModel.checked">
                     <td>{{checkItem.bankType}}</td>
-                    <td>{{checkItem.bankAccount}}</td>
-                    <td>{{checkItem.amountIn}}</td>
+                    <td>{{checkItem.confirmedAddress || checkItem.bankAccount}}</td>
+                    <td>{{checkItem.confirmedAmount || checkItem.amountIn}}</td>
                 </tr>
                 <tr>
                     <td colspan="3">如果对核对结果存有疑问，请联系管理员qq：3091346340</td>
