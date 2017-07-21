@@ -38,6 +38,24 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.checking', {
+            url: 'checking/:phone',
+            views:{
+                'content@':{
+                    templateUrl:'views/checking_list.html',
+                    controller: 'CheckingListController'
+                }
+            }
+        })
+        .state('app.smsprepared', {
+            url: 'smsprepared',
+            views:{
+                'content@':{
+                    templateUrl:'views/sms_prepared.html',
+                    controller: 'SMSPreparedController'
+                }
+            }
+        })
         .state('app.login', {
             url: 'login',
             views: {

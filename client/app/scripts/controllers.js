@@ -417,6 +417,26 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             $scope.subscribeModel.data.error = error.data;
         });
     };
+}]).controller("SMSPreparedController", ["$scope", "MainRemoteResource", "$state", "$stateParams", function($scope, MainRemoteResource, $state, $stateParams){
+    $scope.smsModel = {
+        data:[],
+        display:{}
+    };
+    var model = $scope.smsModel;
+    $scope.getPreparedSMS = function getPreparedSMS(){
+        MainRemoteResource.smsResource.queryPreparedSMS({}).$promise.then(function(success){
+            model.data.length = 0;
+            model.data.push.apply(model.data, success.preparedMessageData);
+        });
+    };
+    $scope.sendSMS = function sendSMS(smsItem){
+        MainRemoteResource.smsResource.sentSMSToPhone({phone:smsItem.account}, smsItem).$promise.then(function(success){
+            if(success){
+                smsItem.status = 'sent';
+            }
+        });
+    };
+    $scope.getPreparedSMS();
 }]).controller("SubscribeModifyController", ["$scope", "MainRemoteResource", "$state", "$stateParams", function($scope, MainRemoteResource, $state, $stateParams) {
     console.log($stateParams);
     var subid = $stateParams.get("subscribeId");

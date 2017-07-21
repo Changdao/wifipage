@@ -24,6 +24,10 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
             sendPhoneCode:{method:"POST", params:{ action:"send"} },
             refreshVerifyCode:{method:"POST", url:"/wifiauth/code/verify/refresh"}
         }),
+        smsResource : $resource(generateUrl("/wifiauth/authed/send/msg/:action/:phone"), {}, {
+            queryPreparedSMS:{method:"GET", params: { action:"list"}, isArray:false },
+            sentSMSToPhone:{method:"POST", params: { action:"to"}}
+        }),
         refreshToken: function(){
             var token = ULStorageService.getToken();
             var deferred = $q.defer();
