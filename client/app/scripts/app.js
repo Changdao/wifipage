@@ -47,6 +47,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.smsprepared', {
+            url: 'smsprepared',
+            views:{
+                'content@':{
+                    templateUrl:'views/sms_prepared.html',
+                    controller: 'SMSPreparedController'
+                }
+            }
+        })
         .state('app.login', {
             url: 'login',
             views: {
