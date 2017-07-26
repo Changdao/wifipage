@@ -476,7 +476,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             start:0,
             hasMore:false,
             showStart: false
-        }
+        },
+        ubcAmount:0,
+        receiveAddress:''
     };
     $rootScope.icoEnv = {
         couldLogin:false,
@@ -513,6 +515,16 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     model.action.getChecked = function getChecked(){
         MainRemoteResource.subscribeResource.getChecked({}).$promise.then(function(success){
             model.checked = success.checkedArray;
+            model.checked.forEach(function(ele, idx, array){
+                switch(ele.bankType){
+                case 'BTC':
+                    model.ubcAmount += (ele.confirmedAmount || ele.amountIn || 0) * 230000;
+                    break;
+                case 'ETH':
+                    model.ubcAmount += (ele.confirmedAmount || ele.amountIn || 0) * 28000;
+                    break;
+                };
+            });
         });
     };
     model.action.getChecked();
@@ -528,7 +540,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             start:0,
             hasMore:false,
             showStart: false
-        }
+        },
+        ubcAmount:0,
+        receiveAddress:''
     };
     $rootScope.icoEnv = {
         couldLogin:false,
@@ -565,9 +579,26 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     model.action.getChecked = function getChecked(){
         MainRemoteResource.subscribeResource.testCheckedList({phone:targePhone}).$promise.then(function(success){
             model.checked = success.checkedArray;
+            model.checked.forEach(function(ele, idx, array){
+                switch(ele.bankType){
+                case 'BTC':
+                    model.ubcAmount += (ele.confirmedAmount || ele.amountIn || 0) * 230000;
+                    break;
+                case 'ETH':
+                    model.ubcAmount += (ele.confirmedAmount || ele.amountIn || 0) * 28000;
+                    break;
+                };
+            });
         });
     };
     model.action.getChecked();
+    $scope.saveUBCAddress = function saveUBCAddress(){
+        MainRemoteResource.subscribeResource.saveUBCAddress({},{
+            address: model.receiveAddress,
+            phone: targePhone
+        }).$promise.then(function(success){
+        });
+    };
     
 }]).controller("ShowPdfController", ["$scope","$stateParams", function($scope, $stateParams){
     var filename = $stateParams["pdfname"];
