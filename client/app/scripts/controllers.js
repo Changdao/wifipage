@@ -479,6 +479,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             saved:0
         },
         ubc:{
+            loaded:false,
             amount:0,
             address:'',
             status:''
@@ -533,8 +534,10 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         });
     };
     model.action.getUBCAddress = function getUBCAddress(){
+        model.ubc.loaded = false;
         MainRemoteResource.subscribeResource.getUBCAddress({}).$promise.then(function(success){
-            var ubcAddress = success.data[0];
+            model.ubc.loaded = true;
+            var ubcAddress = success.data && success.data.length > 0 && success.data[0];
             if(ubcAddress){
                 model.ubc.address = ubcAddress.address;
                 model.ubc.amount = ubcAddress.amount;

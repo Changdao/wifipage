@@ -61,7 +61,7 @@
         </div>
 
     </div>
-    <div class="panel panel-default" ng-if="subscribedModel.ubc.amount > 0 || subscribedModel.ubc.address ">
+    <div class="panel panel-default" ng-if="subscribedModel.ubc.loaded && (subscribedModel.ubc.amount > 0 || subscribedModel.ubc.address) ">
         <div class="panel-heading">用户收币地址登记</div>
         <div class="alert alert-warning" role="alert">请填写收币地址（A、B只能二选一）：
             <li>A、直接填写imtoken个人收币地址（注：对imtoken钱包操作非常熟练，确保不会因误操作丢失代币的）；</li>
