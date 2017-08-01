@@ -482,7 +482,9 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             loaded:false,
             amount:0,
             address:'',
-            status:''
+            status:'',
+            sendType: 'try',
+            oldAddress: ''
         }
     };
     $rootScope.icoEnv = {
@@ -542,6 +544,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
                 model.ubc.address = ubcAddress.address;
                 model.ubc.amount = ubcAddress.amount;
                 model.ubc.status = ubcAddress.status;
+                model.ubc.oldAddress = ubcAddress.address;
             }
         });
     };
@@ -552,7 +555,8 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         model.display.saved = 0;
         MainRemoteResource.subscribeResource.saveUBCAddress({},{
             address: model.ubc.address,
-            status: targetStatus || 'waiting'
+            status: targetStatus || 'waiting',
+            sendType: model.ubc.sendType
         }).$promise.then(function(success){
             model.display.loading --;
             model.ubc.status = targetStatus;
@@ -567,7 +571,16 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     $scope.confirmUBCAddress = function confirmUBCAddress(){
         console.log("info");
-        model.ubc.status = 'confirming';
+        var tstatus = 'confirm';
+        model.ubc.status = tstatus;
+        $scope.saveUBCAddress(tstatus);
+    };
+    $scope.resetAddress = function resetAddress(){
+        model.ubc.sendType = 'try';
+        $scope.saveUBCAddress('confirm');
+    };
+    $scope.noProblem = function noProblem(){
+        model.ubc.sendType = 'all';
         $scope.saveUBCAddress('confirm');
     };
     
@@ -788,6 +801,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             targetAddress: ubcAddress.address,
             amount: ubcAddress.amount,
             ubcVersion: 1,
+            sendType: ubcAddress.sendType,
             id: ubcAddress.id
         }).$promise.then(function(success){
             ubcAddress.status = "sent";

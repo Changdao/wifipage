@@ -59,9 +59,8 @@
                 </tr>
             </table>
         </div>
-
     </div>
-    <div class="panel panel-default" ng-if="subscribedModel.ubc.loaded && (subscribedModel.ubc.amount > 0 || subscribedModel.ubc.address) ">
+    <div class="panel panel-default" ng-if="subscribedModel.ubc.loaded && ( subscribedModel.ubc.amount > 0 || subscribedModel.ubc.address) ">
         <div class="panel-heading">用户收币地址登记</div>
         <div class="alert alert-warning" role="alert">请填写收币地址（A、B只能二选一）：
             <li>A、直接填写imtoken个人收币地址（注：对imtoken钱包操作非常熟练，确保不会因误操作丢失代币的）；</li>
@@ -71,12 +70,12 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label" for="address-of-receive-ubc">收币地址：</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="address-of-receive-ubc" ng-model="subscribedModel.ubc.address" ng-disabled="!(!subscribedModel.ubc.status || subscribedModel.ubc.status == 'waiting')">
+                    <input type="text" class="form-control" id="address-of-receive-ubc" ng-model="subscribedModel.ubc.address" ng-disabled="!(!subscribedModel.ubc.status || subscribedModel.ubc.status == 'waiting' || subscribedModel.ubc.status == 'sent')">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-2 col-sm-offset-4">
-                    <button class="ico-btn btn-success btn-block " ng-click="saveUBCAddress()" ng-if="!subscribedModel.ubc.status || subscribedModel.ubc.status == 'waiting'"> 保存 </button>
+                    <button class="ico-btn btn-info btn-block " ng-click="saveUBCAddress()" ng-if="!subscribedModel.ubc.status || subscribedModel.ubc.status == 'waiting'"> 保存 </button>
                 </div>
                 <div class="col-sm-2">
                     <button class="ico-btn btn-success btn-block " data-target="#confirmAddress" data-toggle="modal" ng-if="!subscribedModel.ubc.status || subscribedModel.ubc.status == 'waiting'"> 确认 </button>
@@ -84,6 +83,30 @@
             </div>
             <div class="alert alert-success text-center" role="alert" ng-if="subscribedModel.display.saved">
                 保存成功
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" ng-if="subscribedModel.ubc.loaded && subscribedModel.ubc.status=='sent'">
+        <div class="panel-heading">收币确认</div>
+        <div class="panel-body form form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="address-of-receive-ubc">已经发币：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address-of-receive-ubc" value="{{subscribedModel.ubc.amount/10000}}" ng-disabled="true">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-12 text-center">
+                    如果地址无误。在收到1/10000额度的UBC后，请再次确认。我们会在一个工作日内剩余的UBC。
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 col-sm-offset-4">
+                    <button class="ico-btn btn-info btn-block" ng-click="resetAddress()">重新确认地址</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="ico-btn btn-success btn-block" ng-disabled="subscribedModel.ubc.address != subscribedModel.ubc.oldAddress" ng-click="noProblem()">地址无误，都给我吧</button>
+                </div>
             </div>
         </div>
     </div>
@@ -99,9 +122,22 @@
             <div class="modal-body">
                 地址
                 <li>{{subscribedModel.ubc.address}}</li>
-                一旦确认，将无法修改。请核对无误后，再点击确认。
+                <li>选择“我很确认”，将一次性将UBC付给此地址。</li>
+                <li>选择“我要试一下”，将会向此地址付币，额度的1/10000。确认收到后，再将剩余的UBC付到此地址。</li>
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="ico-btn btn-primary" for="sendtype_option1" ng-click="subscribedModel.ubc.sendType = 'all'">
+                                <input type="radio" ng-model="subscribedModel.ubc.sendType" name="options" id="sendtype_option1" autocomplete="off" value="all"> 我很确认，都给我吧
+                            </label>
+                            <label class="ico-btn btn-primary" for="sendtype_option2" ng-click="subscribedModel.ubc.sendType = 'try'">
+                                <input type="radio" ng-model="subscribedModel.ubc.sendType" name="options" id="sendtype_option2" autocomplete="off" value="try"> 我要试一下
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer text-center">
                 <button type="button" class="ico-btn btn-default" data-dismiss="modal">取消</button>
                 <button type="button" class="ico-btn btn-primary" data-dismiss="modal" ng-click="confirmUBCAddress()" >确认</button>
             </div>

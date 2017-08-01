@@ -15,7 +15,8 @@
                         <td style="width:20%">用户地址</td>
                         <td style="width:10%">UBC额度</td>
                         <td style="width:10%">状态</td>
-                        <td style="width:20%">操作</td>
+                        <td style="width:10%">方式</td>
+                        <td style="width:20%">操作</t>
                         <td style="width:20%">二维码</td>
                     </tr>
                 </thead>
@@ -25,6 +26,7 @@
                         <td>{{ubcItem.address}}</td>
                         <td>{{ubcItem.amount}}</td>
                         <td>{{ubcItem.status}}</td>
+                        <td>{{ubcItem.sendType}}</td>
                         <td>
                             <button class="ico-btn btn-default btn-outline" ng-if="ubcItem.status=='confirm'" ng-click="ubcItem.showQrCode = !ubcItem.showQrCode" >{{ubcItem.showQrCode ? '隐藏二维码' : '显示二维码'}}</button>
                             <button class="ico-btn btn-default btn-outline" ng-if="ubcItem.status=='confirm'" ng-click="distributeUBC(ubcItem)">分发</button>
