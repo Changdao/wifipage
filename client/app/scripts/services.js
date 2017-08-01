@@ -21,7 +21,7 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
             saveUBCAddress:{method:"POST", isArray:false, url:generateUrl("/wifiauth/authed/ubc/address")},
             getUBCAddress:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/ubc/address")},
             queryUBCAddress:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/ubc/query/all")},
-            distribueUBC:{method:"POST", isArray:false, url:generateUrl("/blockchain/eth/distribution/ubc/:phone")}
+            distributeUBC:{method:"POST", isArray:false, url:generateUrl("/blockchain/eth/distribution/ubc/:phone")}
         }),
         phoneResource: $resource(generateUrl("/wifiauth/phone/code/:action"), {}, {
             preparePhoneCode:{method:"POST", params: { action:"prepare"} },
