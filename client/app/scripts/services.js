@@ -20,7 +20,8 @@ app.service("MainRemoteResource", ["$resource","baseURL", "$http",'ULStorageServ
             testCheckedList:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/list/checked/:phone")},
             saveUBCAddress:{method:"POST", isArray:false, url:generateUrl("/wifiauth/authed/ubc/address")},
             getUBCAddress:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/ubc/address")},
-            queryUBCAddress:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/ubc/query/all")}
+            queryUBCAddress:{method:"GET", isArray:false, url:generateUrl("/wifiauth/authed/ubc/query/all")},
+            distributeUBC:{method:"POST", isArray:false, url:generateUrl("/blockchain/eth/distribution/ubc/:phone")}
         }),
         phoneResource: $resource(generateUrl("/wifiauth/phone/code/:action"), {}, {
             preparePhoneCode:{method:"POST", params: { action:"prepare"} },
