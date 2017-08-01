@@ -466,7 +466,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             $scope.subscribeModel.loading --;
         });
     };
-}]).controller("SubscribeListController", ["$scope","MainRemoteResource","$rootScope", function($scope, MainRemoteResource, $rootScope) {
+}]).controller("SubscribeListController", ["$scope","MainRemoteResource","$rootScope","$timeout", function($scope, MainRemoteResource, $rootScope, $timeout) {
     $scope.subscribedModel = {
         subscribedItemList:[],
         action:{},
@@ -475,7 +475,13 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             showPagination:false,
             start:0,
             hasMore:false,
-            showStart: false
+            showStart: false,
+            saved:0
+        },
+        ubc:{
+            amount:0,
+            address:'',
+            status:''
         }
     };
     $rootScope.icoEnv = {
@@ -513,11 +519,56 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     model.action.getChecked = function getChecked(){
         MainRemoteResource.subscribeResource.getChecked({}).$promise.then(function(success){
             model.checked = success.checkedArray;
+            model.ubc.amount = 0;
+            model.checked.forEach(function(ele, idx, array){
+                switch(ele.bankType){
+                case 'BTC':
+                    model.ubc.amount += (ele.confirmedAmount || ele.amountIn || 0) * 230000;
+                    break;
+                case 'ETH':
+                    model.ubc.amount += (ele.confirmedAmount || ele.amountIn || 0) * 28000;
+                    break;
+                };
+            });
+        });
+    };
+    model.action.getUBCAddress = function getUBCAddress(){
+        MainRemoteResource.subscribeResource.getUBCAddress({}).$promise.then(function(success){
+            var ubcAddress = success.data[0];
+            if(ubcAddress){
+                model.ubc.address = ubcAddress.address;
+                model.ubc.amount = ubcAddress.amount;
+                model.ubc.status = ubcAddress.status;
+            }
         });
     };
     model.action.getChecked();
+    model.action.getUBCAddress();
+    $scope.saveUBCAddress = function saveUBCAddress(targetStatus, failedStatus){
+        model.display.loading ++;
+        model.display.saved = 0;
+        MainRemoteResource.subscribeResource.saveUBCAddress({},{
+            address: model.ubc.address,
+            status: targetStatus || 'waiting'
+        }).$promise.then(function(success){
+            model.display.loading --;
+            model.ubc.status = targetStatus;
+            model.display.saved = 1;
+            $timeout(function(){
+                model.display.saved = 0;
+            }, 2000);
+        }).catch(function(err){
+            model.display.loading --;
+            model.ubc.status = failedStatus || 'waiting';
+        });
+    };
+    $scope.confirmUBCAddress = function confirmUBCAddress(){
+        console.log("info");
+        model.ubc.status = 'confirming';
+        $scope.saveUBCAddress('confirm');
+    };
     
-}]).controller("CheckingListController", ["$scope","MainRemoteResource","$rootScope", "$stateParams", function($scope, MainRemoteResource, $rootScope, $stateParams) {
+}]).controller("CheckingListController", ["$scope","MainRemoteResource","$rootScope", "$stateParams", "$state", function($scope, MainRemoteResource, $rootScope, $stateParams,$state) {
     var targePhone = $stateParams["phone"];
     $scope.subscribedModel = {
         subscribedItemList:[],
@@ -528,6 +579,10 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             start:0,
             hasMore:false,
             showStart: false
+        },
+        ubc:{
+            amount:0,
+            address:''
         }
     };
     $rootScope.icoEnv = {
@@ -565,9 +620,28 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     model.action.getChecked = function getChecked(){
         MainRemoteResource.subscribeResource.testCheckedList({phone:targePhone}).$promise.then(function(success){
             model.checked = success.checkedArray;
+            model.checked.forEach(function(ele, idx, array){
+                switch(ele.bankType){
+                case 'BTC':
+                    model.ubc.amount += (ele.confirmedAmount || ele.amountIn || 0) * 230000;
+                    break;
+                case 'ETH':
+                    model.ubc.amount += (ele.confirmedAmount || ele.amountIn || 0) * 28000;
+                    break;
+                };
+            });
+        }).catch(function(err){
+            $state.go("app.subscribelist");
         });
     };
     model.action.getChecked();
+    $scope.saveUBCAddress = function saveUBCAddress(){
+        MainRemoteResource.subscribeResource.saveUBCAddress({},{
+            address: model.ubc.address,
+            phone: targePhone
+        }).$promise.then(function(success){
+        });
+    };
     
 }]).controller("ShowPdfController", ["$scope","$stateParams", function($scope, $stateParams){
     var filename = $stateParams["pdfname"];
@@ -670,5 +744,54 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         //$scope.publicityModel.files.push.apply($scope.publicityModel.files, newDomain.files);
     }
     changeDomain(domain);
+}]).controller("DistributeController", ["$scope","MainRemoteResource","$state", function($scope, MainRemoteResource, $state){
+    $scope.distributeModel = {
+        action:{},
+        display:{},
+        data:[],
+        loading:0
+    };
+    var model = $scope.distributeModel;
+    model.action.queryUBCAddress = function queryUBCAddress(){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.queryUBCAddress({}).$promise.then(function(success){
+            model.data.length = 0;
+            model.data.push.apply(model.data, success.data);
+            model.loading --;
+        }).catch(function(err){
+            model.loading--;
+            $state.go("app.subscribelist");
+        });
+    };
+    model.action.queryUBCAddress();
+    $scope.completeUBC = function completeUBC(ubcAddress){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.saveUBCAddress({},{
+            address: ubcAddress.address,
+            phone: ubcAddress.account,
+            status: 'complete'
+        }).$promise.then(function(success){
+            model.loading --;
+            ubcAddress.status= 'complete';
+        }).catch(function(err){
+            model.loading --;
+            console.log(err);
+            ubcAddress.status = 'failed';
+        });
+    };
+    $scope.distributeUBC = function distributeUBC( ubcAddress ){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.distributeUBC({phone:ubcAddress.account},{
+            targetAddress: ubcAddress.address,
+            amount: ubcAddress.amount,
+            ubcVersion: 1,
+            id: ubcAddress.id
+        }).$promise.then(function(success){
+            ubcAddress.status = "sent";
+            model.loading --;
+        }).catch(function(error){
+            model.loading --;
+        });
+    };
 }])
 ;

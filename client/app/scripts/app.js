@@ -127,6 +127,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.distribute', {
+            url: 'distribute',
+            views: {
+                'content@': {
+                    templateUrl: 'views/distribute_ubc.html',
+                    controller: 'DistributeController'
+                }
+            }
+        })
     ;
     $urlRouterProvider.otherwise('/subscribelist');
 }).config(['$httpProvider', function($httpProvider){
