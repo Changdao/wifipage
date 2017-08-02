@@ -636,6 +636,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     model.action.getChecked = function getChecked(){
         MainRemoteResource.subscribeResource.testCheckedList({phone:targePhone}).$promise.then(function(success){
             model.checked = success.checkedArray;
+            model.ubc.amount = 0;
             model.checked.forEach(function(ele, idx, array){
                 switch(ele.bankType){
                 case 'BTC':
@@ -650,7 +651,21 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             $state.go("app.subscribelist");
         });
     };
+    model.action.getUBCAddress = function getUBCAddress(){
+        model.ubc.loaded = false;
+        MainRemoteResource.subscribeResource.getUBCAddress({}).$promise.then(function(success){
+            model.ubc.loaded = true;
+            var ubcAddress = success.data && success.data.length > 0 && success.data[0];
+            if(ubcAddress){
+                model.ubc.address = ubcAddress.address;
+                model.ubc.amount = ubcAddress.amount;
+                model.ubc.status = ubcAddress.status;
+                model.ubc.oldAddress = ubcAddress.address;
+            }
+        });
+    };
     model.action.getChecked();
+    model.action.getUBCAddress();
     $scope.saveUBCAddress = function saveUBCAddress(){
         MainRemoteResource.subscribeResource.saveUBCAddress({},{
             address: model.ubc.address,
