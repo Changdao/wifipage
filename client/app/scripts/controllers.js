@@ -861,6 +861,17 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             model.loading --;
         });
     };
+    $scope.updateNewAddress = function updateNewAddress(checkedItem){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.updateChecked({checkedId:checkedItem.id},{confirmedAddress:checkedItem.newConfirmedAddress}).$promise.then(function(success){
+            checkedItem.confirmedAddress = checkedItem.newConfirmedAddress;
+            checkedItem.needNewAddress = false;
+            checkedItem.tradeCount = undefined;
+            model.loading --;
+        }).catch(function(error){
+            model.loading --;
+        });
+    };
     $scope.getCheckedAll();
 }]);
 ;
