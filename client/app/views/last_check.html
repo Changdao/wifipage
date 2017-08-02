@@ -28,7 +28,7 @@
                         <input type="text" ng-model="checkedItem.newConfirmedAddress" ng-if="checkedItem.needNewAddress">
                     </td>
                     <td>{{checkedItem.confirmedAmount}}</td>
-                    <td style="width:20%;word-break:break-all;">{{checkedItem.status}},交易数:{{checkedItem.tradeCount}}</td>
+                    <td style="width:20%;word-break:break-all;" ng-style="checkedItem.status != 'nodoubt' ? {color:'red'}: {}">{{checkedItem.status}},交易数:{{checkedItem.tradeCount}}</td>
                     <td ng-click="checkedItem.needNewAddress = !checkedItem.needNewAddress">{{checkedItem.bankType}}</td>
                     <td>
                         <button class="ico-btn btn-default" ng-click="checkTradeCount(checkedItem)">检查交易数</button>
