@@ -520,7 +520,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         }
     };
     model.action.getChecked = function getChecked(){
-        MainRemoteResource.subscribeResource.getChecked({}).$promise.then(function(success){
+        MainRemoteResource.subscribeResource.getChecked({wyf:new Date().getTime()}).$promise.then(function(success){
             model.checked = success.checkedArray;
             model.ubc.amount = 0;
             model.checked.forEach(function(ele, idx, array){
@@ -537,7 +537,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     model.action.getUBCAddress = function getUBCAddress(){
         model.ubc.loaded = false;
-        MainRemoteResource.subscribeResource.getUBCAddress({}).$promise.then(function(success){
+        MainRemoteResource.subscribeResource.getUBCAddress({wyf:new Date().getTime()}).$promise.then(function(success){
             model.ubc.loaded = true;
             var ubcAddress = success.data && success.data.length > 0 && success.data[0];
             if(ubcAddress){
