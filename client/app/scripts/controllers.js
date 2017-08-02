@@ -825,5 +825,42 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             model.loading --;
         });
     };
-}])
+}]).controller("LastCheckController", ["$scope", "MainRemoteResource", "$state", function($scope, MainRemoteResource, $state){
+    $scope.lastModel = {
+        loading:0,
+        data:[]
+    };
+    var model = $scope.lastModel;
+    $scope.getCheckedAll = function getCheckedAll(){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.getCheckedAll({}).$promise.then(function(success){
+            model.loading --;
+            model.data.length = 0;
+            if(success.data){
+                model.data.push.apply(model.data, success.data);
+            };
+        }).catch(function(error){
+            model.loading--;
+        });
+    };
+    $scope.checkTradeCount = function checkTradeCount(checkedItem){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.getTheCheckedTxCount({address:checkedItem.confirmedAddress}).$promise.then(function(success){
+            checkedItem.tradeCount = success.count;
+            model.loading --;
+        }).catch(function(error){
+            model.loading --;
+        });
+    };
+    $scope.nodoubtChecked = function nodoubtChecked(checkedItem){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.updateChecked({checkedId:checkedItem.id},{status:"nodoubt"}).$promise.then(function(success){
+            checkedItem.status = "nodoubt";
+            model.loading --;
+        }).catch(function(error){
+            model.loading --;
+        });
+    };
+    $scope.getCheckedAll();
+}]);
 ;

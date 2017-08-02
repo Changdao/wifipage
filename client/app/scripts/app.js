@@ -47,6 +47,15 @@ var app = angular.module('ico', [
                 }
             }
         })
+        .state('app.lastchecking', {
+            url: 'lastchecking',
+            views:{
+                'content@':{
+                    templateUrl:'views/last_check.html',
+                    controller: 'LastCheckController'
+                }
+            }
+        })
         .state('app.smsprepared', {
             url: 'smsprepared',
             views:{
