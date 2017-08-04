@@ -102,6 +102,17 @@
             </div>
         </div>
     </div>
+    <div class="panel panel-default" ng-if="subscribedModel.ubc.loaded && subscribedModel.ubc.status=='complete'">
+        <div class="panel-heading">发币信息</div>
+        <div class="panel-body form form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="address-of-receive-ubc">已经发币：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address-of-receive-ubc" value="{{subscribedModel.ubc.amount}}" ng-disabled="true">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="modal fade" role="dialog" id="confirmAddress" aria-labelledby="confirmAddressModal">
