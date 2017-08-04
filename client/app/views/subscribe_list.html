@@ -106,9 +106,9 @@
         <div class="panel-heading">发币信息</div>
         <div class="panel-body form form-horizontal">
             <div class="form-group">
-                <label class="col-sm-2 control-label" for="address-of-receive-ubc">已经发币：</label>
+                <label class="col-sm-2 control-label" for="address-of-receive-ubc">已经发币到：</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="address-of-receive-ubc" value="{{subscribedModel.ubc.amount}}" ng-disabled="true">
+                    <input type="text" class="form-control" id="address-of-receive-ubc" value="{{subscribedModel.ubc.address}}：{{subscribedModel.ubc.amount}} UBC" ng-disabled="true">
                 </div>
             </div>
         </div>
