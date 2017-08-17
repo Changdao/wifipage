@@ -178,6 +178,31 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         });
     };
     $scope.prepareSignUp();
+}]).controller("CreateAccountControlller",["$scope","$rootScope","MainRemoteResource", "md5","$state","$interval", function($scope,$rootScope,MainRemoteResource, md5, $state, $interval){
+    $scope.createModel = {
+        loading:0,
+        newAccount:{
+        }
+    };
+    $scope.createAccount = function createAccount(){
+        var uploadData = angular.extend({}, $scope.createModel.newAccount);
+        uploadData.password = md5.createHash(uploadData.password);
+        $scope.registerModel.loading++;
+        MainRemoteResource.accountResource.signupAccount({}, uploadData).$promise
+            .then(function(success){
+                console.log(success);
+                $scope.display.error = undefined;
+                $scope.registerModel.loading--;
+                $state.go("app.login");
+            }, function(error){
+                console.log(error);
+                $scope.registerModel.loading--;
+                if(error && error.data && error.data.code){
+                    $scope.display.error = error.data;
+                }
+            });
+        
+    };
 }]).controller("FindLostPasswordController",["$scope","$rootScope","MainRemoteResource", "md5","$state","$interval", function($scope,$rootScope,MainRemoteResource, md5, $state, $interval){
     var base = {
         verify:{},
@@ -873,5 +898,40 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
         });
     };
     $scope.getCheckedAll();
+}]).controller("DistributeVipController", ["$scope","MainRemoteResource","$state", function($scope, MainRemoteResource, $state){
+    $scope.distributeModel = {
+        action:{},
+        display:{},
+        data:[],
+        loading:0
+    };
+    var model = $scope.distributeModel;
+    model.action.queryVipUBCAddress = function queryUBCAddress(){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.queryUBCVIPAddress({}).$promise.then(function(success){
+            model.data.length = 0;
+            model.data.push.apply(model.data, success.data);
+            model.loading --;
+        }).catch(function(err){
+            model.loading--;
+            $state.go("app.subscribelist");
+        });
+    };
+    model.action.queryUBCAddress();
+    $scope.distributeUBC = function distributeUBC(ubcAddress, type){
+        model.loading ++;
+        MainRemoteResource.subscribeResource.distributeUBC({phone:ubcAddress.account},{
+            targetAddress: ubcAddress.address,
+            amount: ubcAddress.amount,
+            ubcVersion: 1,
+            sendType: ubcAddress.sendType,
+            id: ubcAddress.id
+        }).$promise.then(function(success){
+            ubcAddress.status = "sent";
+            model.loading --;
+        }).catch(function(error){
+            model.loading --;
+        });
+    };
 }]);
 ;

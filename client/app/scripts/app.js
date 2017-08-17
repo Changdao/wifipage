@@ -78,8 +78,8 @@ var app = angular.module('ico', [
             url: 'register',
             views: {
                 'content@': {
-                    templateUrl: 'views/login.html',
-                    controller: 'LoginController'
+                    templateUrl: 'views/register.html',
+                    controller: 'RegisterController'
                 }
             }
         })
