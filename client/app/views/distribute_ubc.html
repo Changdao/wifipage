@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="ubcItem in distributeModel.data | orderBy:'id' | orderBy:'status' ">
+                    <tr ng-repeat="ubcItem in distributeModel.data | orderBy:'id' | orderBy:'status' | orderBy:'updated_at' ">
                         <td>{{ubcItem.account}}</td>
                         <td>{{ubcItem.address}}</td>
                         <td>{{ubcItem.amount}}</td>
@@ -36,7 +36,7 @@
                         <td>
                             <div style="padding:8px; border:2px solid black; display:inline-block;" ng-if="ubcItem.showQrCode" > <qrcode data="{{ubcItem.address}}" size="200"> </qrcode> 
                         </td>
-                        <td>{{ubcItem.updated_at | date:'yyyy-MM-dd HH:mm':'+8'}}</td>
+                        <td>{{ubcItem.updated_at | date:'yyyy-MM-dd HH:mm':'+0'}}</td>
                     </tr>
                 </tbody>
             </table>
