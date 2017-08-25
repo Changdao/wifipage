@@ -837,6 +837,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
     };
     $scope.distributeUBC = function distributeUBC( ubcAddress ){
         model.loading ++;
+        ubcAddress.disabled = true;
         MainRemoteResource.subscribeResource.distributeUBC({phone:ubcAddress.account},{
             targetAddress: ubcAddress.address,
             amount: ubcAddress.amount,
@@ -845,6 +846,7 @@ angular.module("ico").controller('HeaderController', ['$scope', function($scope)
             id: ubcAddress.id
         }).$promise.then(function(success){
             ubcAddress.status = "sent";
+            ubcAddress.disabled = false;
             model.loading --;
         }).catch(function(error){
             model.loading --;

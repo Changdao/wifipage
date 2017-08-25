@@ -30,7 +30,7 @@
                         <td>{{ubcItem.sendType}}</td>
                         <td>
                             <button class="ico-btn btn-default btn-outline" ng-if="ubcItem.status=='confirm'" ng-click="ubcItem.showQrCode = !ubcItem.showQrCode" >{{ubcItem.showQrCode ? '隐藏二维码' : '显示二维码'}}</button>
-                            <button class="ico-btn btn-default btn-outline" ng-if="ubcItem.status=='confirm' || ubcItem.status=='prepareall' " ng-click="distributeUBC(ubcItem)">分发</button>
+                            <button class="ico-btn btn-default btn-outline" ng-if="ubcItem.status=='confirm' || ubcItem.status=='prepareall' " ng-click="distributeUBC(ubcItem)" ng-disabled="ubcItem.disabled">分发</button>
                             <button class="ico-btn btn-default btn-outline" ng-if="ubcItem.status=='confirm'" ng-click="completeUBC(ubcItem)">完成</button>
                         </td>
                         <td>
